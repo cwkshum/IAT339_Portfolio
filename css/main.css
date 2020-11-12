@@ -46,18 +46,17 @@ img{
 	flex-direction: row;
 	flex-wrap: wrap;
 	background: #ffffff;
-	padding: 1.5rem 2.5rem;
+	padding: 1.5rem 8%;
 }
 
 /* Logo in Navigation */
 .nav-logo{
 	flex: 1;
-	margin-left: 0;
+	margin-left: 1.2rem;
 	margin-top: -0.6rem;
 }
 
 .nav-logo a{
-	/*padding-top: 2rem;*/
 	font-size: 2rem;
 	color: #C09992;
 }
@@ -77,7 +76,7 @@ img{
 .nav-link{
 	color: #C09992;
 	padding-bottom: 0.2rem;
-	margin-right: 1.2rem;
+	margin-left: 1.5rem;
 	border-bottom: 2px solid #ffffff;
 }
 
@@ -239,56 +238,6 @@ input[type = "text"], input[type="email"]{
 	border: 2px solid #8C7977;
 	background: #FCFCFC;
 	color: #7B7B7B;
-}
-
-/* Styling for all Confirmation Containers */
-.confirmation-container h2, .confirmation-container p {
-	margin-left:0.8rem;
-	max-width: 100%;
-}
-
-.confirmation-container{
-	flex: 1;
-	padding: 2rem;
-	margin: 1rem 1rem 0 1rem;
-	background: #ffffff;
-}
-
-.confirmation-container {
-  display: none;
-}
-
-.hidden.container{
-	display: none;
-}
-
-/* Scroll to top Button Styling */
-#scrollUpbtn {
-	display: none;
-	cursor: pointer;
-	position: fixed;
-	bottom: 2rem;
-	right: 3rem;
-	padding: 0.7rem 1rem;
-	margin-right: 0.5rem;
-	border-radius: 10px;
-	border: 2px solid #954749;
-	background: #954749;
-	color: #ffffff;
-	font-family: 'Open Sans', sans-serif;
-	transition: 0.3s;
-}
-
-#scrollUpbtn:hover {
-	border: 2px solid #954749;
-	background: #ffffff;
-	color: #954749;
-}
-
-#scrollUpbtn:focus {
-	border: 2px solid #3C3C3C;
-	background: #F5F5F5;
-	color: #3C3C3C;
 }
 
 /* Footer Styling */

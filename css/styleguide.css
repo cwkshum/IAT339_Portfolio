@@ -1,9 +1,5 @@
 /* Container For Page Layout*/
 #container{
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;*/
-	/*width: 80%;*/
 	margin-left: 35%;
 	margin-right: 4rem;
 }
@@ -62,8 +58,10 @@ li{
 	margin-top: 0.8rem;
 }
 
+/* Navigation Styling */
 .main-nav{
 	box-shadow: 1px 1px 5px #D0D0D0;
+	padding: 1.5rem 3rem;
 }
 
 /* Contact Sales Container Styling */

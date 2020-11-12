@@ -1,0 +1,214 @@
+/* Header Styling */
+.main-header{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../img/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 9rem 3.8rem;
+}
+
+.main-header h1{
+  font-size: 4rem;
+  text-shadow: 0.3rem 0.3rem 2rem #000000;
+}
+
+.main-header h2{
+  color: #ffffff;
+  width: 60%;
+  margin-top: -1.5rem;
+  text-shadow: 0.3rem 0.3rem 2rem #000000;
+}
+
+.page-contents{
+  /*margin: 4rem 6rem;*/
+  margin: 4rem 10%;
+}
+
+/*.subheading{
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid;
+  margin-right: 40%;
+}*/
+
+hr{
+  margin-top: -0.5rem;
+  margin-right: 70%;
+  margin-bottom: 4rem;
+  border: 1px solid #C09992;
+}
+
+.project-display{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+}
+
+.project-image{
+  flex: 2;
+}
+
+.project-image img{
+  width: 100%;
+}
+
+.project-description-container{
+  flex: 1;
+  margin: auto;
+  z-index: 1;
+}
+
+.project-description{
+  background: #DDC7C4;
+  padding: 3rem 4rem;
+}
+
+.project-description.right{
+  /*margin-right: 20%;*/
+  margin-left: -4rem;
+}
+
+.project-description.left{
+  /*margin-left: 20%;*/
+  margin-right: -4rem;
+}
+
+.project-description h3{
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: -0.8rem;
+  font-size: 1.5rem;
+}
+
+.project-description p{
+  color: #ffffff;
+}
+
+
+/* MEDIA QUERIES */
+/* Screen size below 320px */
+@media screen and (max-width:20rem){
+  .main-header h2{
+    width: 2rem;
+    font-size: 0.75rem;
+    margin-top: -1.5rem;
+  }
+}
+
+/* Screen size below 480px */
+@media screen and (max-width:30rem){
+
+  .main-header{
+    padding: 3.5rem 3.8rem;
+  }
+
+  .main-header h1{
+    font-size: 2rem;
+  }
+
+  .main-header h2{
+    width: 13rem;
+    font-size: 0.75rem;
+    margin-top: -1.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .page-description p, .seeda-benefits-container p{
+    max-width: 100%;
+  }
+
+  #about-seerem .image-container{
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 90%;
+  }
+
+  .service-listing-container{
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .seeda-features-container{
+    order: 1;
+    padding-left: 1rem;
+    margin-top: -3rem;
+  }
+
+  .features.image-container{
+    order: 2;
+    margin-top: -0.5rem;
+    max-width: 90%;
+    padding-left: 2rem;
+  }
+
+  .seeda-benefits-container {
+    padding-left: 1rem;
+    margin-top: -3rem;
+  }
+
+  .benefits.image-container{
+    margin-top: -1rem;
+    max-width: 90%;
+    padding-left: 2rem;
+  }
+
+  #services.container{
+    margin-top: -3rem;
+  }
+}
+
+/* Screen size of 480px - 800px */
+@media screen and (min-width:30rem) and (max-width: 50rem){
+  .main-header{
+    padding: 5rem 3.8rem;
+  }
+
+  .main-header h1{
+    font-size: 2.5rem;
+  }
+
+  .main-header h2{
+    width: 17rem;
+    font-size: 1rem;
+    margin-top: -1.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+
+}
+
+/* Screen size of 800px - 960px */
+@media screen and (min-width: 50rem) and (max-width: 60rem){
+
+  .main-header{
+    padding: 6rem 3.8rem;
+  }
+
+  .main-header h1{
+    font-size: 2.8rem;
+  }
+
+  .main-header h2{
+    width: 22rem;
+    font-size: 1.25rem;
+    margin-top: -1.8rem;
+  }
+
+
+}
+
+/* Screen size above 960px */
+@media screen and (min-width:60rem){
+  .main-header h2 {
+    width: 26rem;
+    font-size: 1.5rem;
+    margin-top: -1.8rem;
+  }
+}
