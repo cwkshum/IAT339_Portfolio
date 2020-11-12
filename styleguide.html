@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Website Tab Title -->
+		<title>Style Guide | Carissa Shum</title>
+
+		<!-- Website Tab Icon -->
+		<!-- <link rel="icon" href="img/sq_logo.png" type="image/png"> -->
+
+		<!-- Linked Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+		<!-- Linked Style Sheets -->
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/styleguide.css" rel="stylesheet">
+
+  	</head>
+
+  	<body>
+  		
+		<div class="side-navigation">
+	  		<h1>Portfolio Style Guide</h1>
+	  		<!-- Page Navigation -->
+	  		<nav>
+	  			<a href="#interactive" class="page-nav">Interactive Elements</a>
+	  			<a href="#textstyling" class="page-nav">Text Styling</a>
+	  			<a href="#combinedelements" class="page-nav">Combined Elements</a>
+	  			<a href="#portfoliocomponents" class="page-nav">Portfolio Components</a>
+	  			<a href="#projectanalysis" class="page-nav">Project Analysis</a>
+	  			<a href="#templates" class="page-nav">Templates</a>
+	  		</nav>
+		</div>
+<div id="container">
+			<div class="box2">
+			    <!-- INTERACTIVE ELEMENTS SECTION -->
+			    <section id="interactive" class="anchor">
+			    	<h2 class="subheading">Interactive Elements</h2>
+
+			    	<!-- In-text Link -->
+			      	<section class="element">
+			        	<h3>In-text Link</h3>
+			        	<h4>CSS Selector</h4>
+			        	<p>a element tag</p>
+			        	<h4>Sample Code</h4>
+			        	<code>&lt;a href="styleguide.html"&gt;View Details&lt;/a&gt;</code>
+			        	<h4>Rendered Example</h4>
+			        	<a href="styleguide.html" class="intext-link">View Details</a><br>
+			      	</section>
+
+			      	<!-- Navigation Link -->
+			      	<section class="element">
+			        	<h3>Navigation Link</h3>
+			        	<h4>CSS Selector</h4>
+			        	<p>.nav-link</p>
+			        	<h4>Sample Code</h4>
+			        	<code>&lt;nav&gt;&lt;a href="index.html" class="nav-link"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code>
+			        	<h4>Rendered Element</h4>
+			        	<nav>
+			  				<a href="index.html" class="nav-link">Home</a>
+						</nav>
+			      	</section>
+
+			      	<!-- Submit Button -->
+			      	<section class="element">
+			        	<h3>Submit Button</h3>
+			        	<h4>CSS Selector</h4>
+			        	<p>.action-btn</p>
+			        	<h4>Sample Code</h4>
+			        	<code>&lt;input class="action-btn" type="submit" value="Submit"&gt;</code>
+			        	<h4>Rendered Element</h4>
+			       	 	<form>
+			  				<input class="action-btn" type="submit" value="Submit">
+						</form>
+			      	</section>
+
+			      	<!-- Text Input with Label -->
+			      	<section>
+			        	<h3>Text Input Field with a Label</h3>
+			        	<h4>CSS Selector</h4>
+			        	<p>.form-label, .text-input</p>
+			        	<h4>Sample Code</h4>
+			        	<code>&lt;form&gt;&lt;input class="text-input" type="text" id="firstname" name="firstname"&gt;&lt;/form&gt;</code>
+			        	<h4>Rendered Element</h4>
+			        	<form>
+			        		<div class="solo form-section">
+				  				<label for="firstname" class="form-label">First Name</label><br>
+				  				<input type="text" class="text-input" id="firstname" name="firstname">
+			  				</div>
+						</form>
+			      	</section>
+			    </section>
+
+
+			    <!-- TEXT STYLING SECTION -->
+			    <section id="textstyling" class="anchor">
+			      	<h2 class="subheading">Text Styling</h2>
+
+			      	<!-- Headings -->
+			      	<section class="element">
+			        	<h3>Headings</h3>
+			        	<h4>CSS Selector</h4>
+			        	<p>h1, h2, h3, h4 element tags</p>
+			        	<h4>Sample Code</h4>
+			        	<code>&lt;h1&gt;Heading Level 1&lt;/h1&gt;</code>
+			        	<h4>Rendered Element</h4>
+			        	<h2>Heading Level 1</h2>
+			        	<h3>Heading Level 2</h3>
+			        	<h4>Heading Level 3</h4>
+			        	<h5>Heading Level 4</h5>
+			     	</section>
+
+			      	<!-- Paragraphs -->
+			      	<section>
+			        	<h3>Paragraph</h3>
+			        	<h4>CSS Selector</h4>
+			        	<p>p element tag</p>
+			        	<h4>Sample Code</h4>
+			        	<code>&lt;p&gt;Sample Paragraph&lt;/p&gt;</code>
+			        	<h4>Rendered Element</h4>
+			        	<p>Welcome to my portfolio! You can find samples of the previous projects that I have worked on below. Click on each project to read a full project analysis and summary to learn more about it. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper ipsum vitae ullamcorper auctor. Integer odio odio, viverra sed lectus quis, bibendum lacinia ligula. Aenean nec egestas lorem, at consequat turpis. Nunc sodales cursus leo. Quisque eu rhoncus nisl. Aenean ac aliquet nibh, ac congue urna.</p>
+			      	</section>
+			    </section>
+
+			    <!-- COMBINED ELEMENTS SECTION -->
+			    <section id="combinedelements" class="anchor">
+			    	<h2 class="subheading">Combined Elements</h2>
+
+			    	<!-- Main Navigation -->
+			      	<section class="element">
+			        	<h3>Main Navigation</h3>
+			        	<nav class="main-nav">
+			        		<!-- Navigation Logo -->
+							<div class="nav-logo">
+								<a href="index.html">cs</a>
+							</div>
+							<div class="nav-link-section">
+								<a href=" " class="nav-link">Work</a>
+								<a href=" " class="nav-link">About</a>
+								<a href=" " class="nav-link">Contact</a>
+							</div>
+						</nav>
+			      	</section>
+
+			      	<!-- Service Listing -->
+			      	<section class="element">
+			       	 	<h3>Project Display</h3>
+			       		<div class="project-display">
+			       			<div class="project-image">
+			       				<img src="img/seeremproject.png" alt="SeeRem Project">
+			       			</div>
+			       			<div class="project-description-container">
+			       				<div class="project-description">
+			       					<h3>SeeRem</h3>
+			       					<p>Front-End Website</p>
+			       					<a href=" ">View&nbsp;More</a>
+			       				</div>
+			       			</div>
+			       		</div>
+
+			      	</section>
+
+			      	<!-- Contact Form -->
+			      	<section>
+			        	<h3>Contact Form</h3>
+			        	<div class="contact-sales-container">
+					       	<h4>Get in Touch</h4>
+					    	<!-- Create Account Form -->
+					        <form class="contact-form">
+						        <!-- First Name Input Box -->
+						        <div class="form-section">
+							  		<label class="form-label" for="firstname2">First Name</label><br>
+							  		<input class="text-input" type="text" id="firstname2" name="firstname2" placeholder="First" required>
+							  	</div>
+						        <!-- Last Name Input Box -->
+							  	<div class="form-section">
+								  	<label class="form-label" for="lastname">Last Name</label><br>
+								  	<input class="text-input" type="text" id="lastname" name="lastname" placeholder="Last" required>
+							  	</div>
+						        <!-- Email Address Input Box -->
+							  	<div class="form-section">
+							  		<label class="form-label" for="email">Email Address</label><br>
+						  			<input class="text-input" type="email" id="email" name="email" placeholder="email@gmail.com" required>
+					  			</div>
+						        <!-- Phone Number Input Box -->
+					  			<div class="form-section">
+						  			<label class="form-label" for="phone">Phone Number</label><br>
+					  				<input class="text-input" type="text" id="phone" name="phone" placeholder="012-345-6789">
+						  		</div>
+							  	<!-- Contact Sales Submit Button -->
+						  		<div class="action-btn-container">
+						  			<input class="action-btn" type="submit" value="Submit">
+						  		</div>
+						  	</form>
+						</div>
+			      	</section>
+			    </section>
+
+
+			    <!-- PORTFOLIO COMPONENTS SECTION -->
+			    <section id="portfoliocomponents" class="anchor">
+			      	<h2 class="subheading">Portfolio Components</h2>
+			      	<!-- Fonts -->
+			      	<section class="element">
+			        	<h3>Fonts</h3>
+			        	<h2>Main Headings: Montserrat (Semi-bold)</h2>
+			        	<h3>Sub headings: Montserrat (Medium)</h3>
+			        	<p>Body: Open Sans (Regular)</p>
+			      	</section>
+
+			      	<!-- Colour Palettes -->
+			      	<section class="element">
+			        	<h3>Colour Palettes</h3>
+			        	<img src="img/colourpalette.png" alt="Colour Palette">
+			        	<img src="img/annotatedcolours.png" alt="Annotated Colour Palette">
+			      	</section>
+
+			      	<!-- Personal Bio -->
+			      	<section>
+			        	<h3>Personal Bio</h3>
+			        	<p>I am a Surrey based designer that is currently studying Interactive Arts and Technology at Simon Fraser University. With a strong interest in web development and interface design, I hope to create a positive user experience through the work I produce. My goal is to utilize my skill sets to create meaningful designs that can meet the needs of the intended users. </p>
+			      	</section>
+			    </section>
+
+			    <!-- PORTFOLIO ANALYSIS SECTION -->
+			    <section id="projectanalysis" class="anchor">
+			    	<h2 class="subheading">Project Analysis</h2>
+
+			      	<section class="element">
+			        	<h3>Project One: SeeRem Website</h3>
+			        	<p>For this project, I worked with the company Seeda to develop a front-end website for their SeeRem division. By communicating with them, I was able to learn more about the service they were offering to help me better design for the intended purpose of the website. The end product was a fully developed front-end responsive website to promote SeeRem, an application that allows teams working in remote worksites to connect with one another.</p>
+						<p>During the first month of the project, I began creating a style guide for the SeeRem website which consisted of designing the basic structure and elements that would be incorporated into the site. This stage also included understanding the branding of the company and how it would be represented through the website.</p>
+						<p>Development of the website began in the second month, where I started creating template pages using HTML and CSS. Throughout the weeks, we began refining the layout of the overall site by compiling content, images, and deciding on the overall flow that would create a positive user experience. JavaScript was also used in the site to increase the functionality, such as having a scroll to top and confirmation messages.</p>
+						<p>Once the structure of the website was developed, I had to ensure that the site was responsive so that it can be viewed on various different device screen sizes, including mobile. This was one of the more challenging tasks of the project as it was my first time developing a website that would be fully responsive. Making the website work well for mobile devices proved to be very hard as the screen size was a lot smaller in comparison to a desktop screen size. However, through the use of media queries, I was able to make the elements of the page more appropriate for a smaller screen size.</p>
+						<p>Overall, the whole process took two months and was coded to be responsive on a variety of devices and browsers. Using the experience from this project, I would spend more time considering how future website projects would look on mobile to make the process of implementing responsiveness easier. The final website was then submitted to the company, where it received a positive review from Seeda.</p>
+						<h4>Role</h4>
+						<p>Front-end Developer, UX/UI Designer</p>
+						<h4>Tools</h4>
+						<p>HTML, CSS, JavaScript, Figma</p>
+						<h4>Team</h4>
+						<p>Dinuki Adikaram</p>
+						<h4>Artifacts</h4>
+						<img src="img/seeremproject.png" alt="SeeRem Project Display">
+
+			      	</section>
+
+			      	<section>
+			        	<h3>Project Two: Shoe Addiction Website</h3>
+			        	<p>Shoe Addiction is a fictional shoe store web application project, focused on the back-end handling of user requests. The website was developed to retrieve from a database to display products offered by the store, allow visitors to browse content units, and handle member registration, log in and customization. The overall functionality and idea of the website was inspired by current e-commerce sites.</p>
+			        	<p>Starting with the database design, an ER Diagram was created to understand what information needed to be stored on the site to handle the intended functionality. Three main entities with their respective attributes and relations were created; Members, Products, and Cart. Once the diagram was finalized, the database was created.</p>
+			        	<p>The next step of the project was front-end development, where I used HTML, CSS, and Javascript to create a basic structure for the website based on the wireframes that we designed. Images and content were added and the branding was constructed to create a comprehensive user interface.</p>
+			        	<p>Our focus then shifted to back-end development where I used PHP and MySQL to process user and database information. Users had the ability to browse the shoes that were retrieved from the database and through the use of PHP form handling and MySQL query statements, visitors had the ability to sign up for an account or log in to the site using a pre-existing account. The website is able to check the database to see if the user has inputted the correct information when trying to log in and will then allow them to add items to their favourites list and cart. With the different abilities that visitors and members have on the site, PHP sessions were implemented to check if a user is logged in. </p>
+			        	<p>Since this was the first time I worked with PHP and MySQL to develop a website that was focused primarily on back-end development, it was challenging to get the functionality of the site working at each phase. It took a lot of time to debug certain issues in our code. However, by dedicating more time to learning and understanding each topic, I was able to figure out the issues that we had and got the final website working with our intended functionality.</p>
+			        	<p>Overall, the development of the website took three months to complete. For future iterations, I would have liked to implement responsiveness for the website to be compatible with a range of devices as well as implement the purchase process. The final outcome was a fully developed website that had both front-end and back-end implemented.</p>
+			        	<h4>Role</h4>
+						<p>Front-end Developer, UX/UI Designer, Back-end Developer</p>
+						<h4>Tools</h4>
+						<p>HTML, CSS, JavaScript, PHP, MySQL, Figma</p>
+						<h4>Team</h4>
+						<p>Rowina Chan and Chamira Perera</p>
+						<h4>Artifacts</h4>
+			      	</section>
+			    </section>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<!-- <footer>
+			<div class="footer-navigation">
+				<h4>Navigation</h4>
+				<ul>
+					<li><a href="index.html">Work</a></li>
+					<li><a href=" ">About</a></li>
+				</ul>
+				<ul>
+					<li><a href=" ">Project 1</a></li>
+					<li><a href=" ">Project 2</a></li>
+				</ul>
+				<ul>
+					<li><a href="styleguide.html" target="_blank">Style Guide</a></li>
+					<li><a href=" " target="_blank">GitHub</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<h4>Contact</h4>
+				<ul>
+					<li>Email Address: email@mail.com</li>
+					<li>Phone: +1 (000) 000 000</li>
+				</ul>
+			</div>
+			<div class="footer-social">
+				<h4>Social Media</h4>
+			</div>
+		</footer> -->
+  	</body>
+</html>

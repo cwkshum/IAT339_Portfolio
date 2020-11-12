@@ -1,0 +1,311 @@
+/* Container For Page Layout*/
+#container{
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;*/
+	/*width: 80%;*/
+	margin-left: 35%;
+	margin-right: 4rem;
+}
+
+#container .box1{
+	padding: 2rem;
+}
+
+.side-navigation{
+	padding: 0 2rem;
+	position: fixed;
+	margin-left: 2rem;
+	margin-top: -2rem;
+}
+
+.box2{
+	flex: 2;
+	margin-top: 3.2rem;
+	margin-right: 1rem;
+}
+
+/* Page Lavigation Links*/
+.page-nav{
+	display: block;
+	margin-bottom: 0.8rem;
+	color: #8C7977;
+}
+
+.page-nav:hover, .page-nav:focus{
+	color: #3C3C3C;
+}
+
+/* Page Subheadings*/
+.subheading{
+	padding-bottom: 0.8rem;
+	border-bottom: 2px solid;
+	margin-right: 40%;
+}
+
+/* page subsections */
+section{
+	padding-bottom: 1rem;
+	margin-bottom: 1.6rem;
+}
+
+.element{
+	border-bottom: 1px solid #bbb;
+}
+
+code{
+	word-wrap: break-word;
+}
+
+/*list styling*/
+li{
+	margin-top: 0.8rem;
+}
+
+.main-nav{
+	box-shadow: 1px 1px 5px #D0D0D0;
+}
+
+/* Contact Sales Container Styling */
+.contact-sales-container{
+	flex: 1;
+	padding: 2rem;
+	margin-left: 0;
+	margin-right: 10rem;
+	margin-bottom: 3rem;
+	background: #ffffff;
+}
+
+/* Contact Sales Subheading Styling */
+.contact-sales-container h4{
+	margin-left: 0.8rem;
+}
+
+/* Form Section Styling */
+.solo.form-section{
+	margin-top: -1.5rem;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.form-section{
+	margin-top: 0.5rem;
+	display: inline-block;
+	width: 40%;
+	margin-bottom: -1.5rem;
+	margin-right: 10%;
+}
+
+.form-section p{
+	margin-top: -0.3rem;
+}
+
+.project-display{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.project-image{
+	flex: 2;
+}
+
+.project-image img{
+	width: 100%;
+}
+
+.project-description-container{
+	flex: 1;
+	margin: auto;
+}
+
+.project-description{
+	background: #DDC7C4;
+	margin-right: 20%;
+	margin-left: -4rem;
+	padding: 3rem 4rem;
+}
+
+.project-description h3{
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: -0.8rem;
+	font-size: 1.5rem;
+}
+
+.project-description p{
+	color: #ffffff;
+}
+
+
+
+/* MEDIA QUERIES */
+/* Screen size of 480px or less */
+@media screen and (max-width:30rem){
+	#container{
+		flex-direction: column;
+	}
+
+	.box2{
+		margin-top: -4rem;
+		margin-left: 1rem;
+	}
+
+	p{
+		max-width: 100%;
+	}
+
+	.nav-logo img{
+		width: 5rem;
+		margin-left: -2rem;
+	}
+
+	code{
+		word-break: break-word;
+	}
+
+	.contact-sales-container{
+		margin-right: 0;
+	}
+
+	.solo.form-section{
+		width: 50%;
+	}
+
+	.form-section{
+		display: block;
+		width: 90%;
+	}
+}
+
+/* Screen size of 480px - 768px */
+@media screen and (min-width:30rem) and (max-width: 48rem){
+	body{
+		margin-top: 12rem;
+	}
+	#container{
+		flex-direction: column;
+		margin-left: 3rem;
+	}
+
+	.side-navigation{
+		margin: 0;
+		top: 0;
+		right: 0;
+		left: 0;
+		padding: 0 4rem 1rem 4rem;
+		background: #ffffff;
+		box-shadow: 1px 1px 5px grey;
+	}
+
+	.box2{
+		margin-top: 0;
+		margin-left: 1rem;
+	}
+
+	.page-nav{
+		display: inline-block;
+		margin-right: 2.5rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.anchor{
+		padding-top: 55rem;
+    	margin-top: -55rem;
+	}
+
+	code{
+		word-break: break-word;
+	}
+
+	.contact-sales-container{
+		margin-right: 0;
+	}
+
+	.solo.form-section{
+		width: 50%;
+	}
+
+	.form-section{
+		display: block;
+		width: 100%;
+	}
+}
+
+/* Screen size of 768px - 960px */
+@media screen and (min-width:48rem) and (max-width: 60rem){
+	body{
+		margin-top: 12rem;
+	}
+	#container{
+		flex-direction: column;
+		margin-left: 3rem;
+	}
+
+	.side-navigation{
+		margin: 0;
+		top: 0;
+		right: 0;
+		left: 0;
+		padding: 0 4rem 1rem 4rem;
+		background: #ffffff;
+		box-shadow: 1px 1px 5px grey;
+	}
+
+	.box2{
+		margin-top: 0;
+		margin-left: 1rem;
+	}
+
+	.page-nav{
+		display: inline-block;
+		margin-right: 2.5rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.anchor{
+		padding-top: 10rem;
+    	margin-top: -10rem;
+	}
+
+	.form-section{
+		margin-right: 12%;
+	}
+}
+
+/* Screen size of 960px - 1248px */
+@media screen and (min-width: 60rem) and (max-width: 78rem){
+	body{
+		margin-top: 12rem;
+	}
+	#container{
+		flex-direction: column;
+		margin-left: 3rem;
+	}
+
+	.side-navigation{
+		margin: 0;
+		top: 0;
+		right: 0;
+		left: 0;
+		padding: 0 4rem 1rem 4rem;
+		background: #ffffff;
+		box-shadow: 1px 1px 5px grey;
+	}
+
+	.box2{
+		margin-top: 0;
+		margin-left: 1rem;
+	}
+
+	.page-nav{
+		display: inline-block;
+		margin-right: 2.5rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.anchor{
+		padding-top: 10rem;
+    	margin-top: -10rem;
+	}
+}
