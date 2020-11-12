@@ -30,14 +30,49 @@
 	margin-right: 14%;
 }
 
-/* Create Account form styling */
-.account-form{
-	background: #ffffff;
-	margin-top: -1.5rem;
-	padding-left: 2rem;
-	padding-bottom: 1.2rem;
+hr{
+  margin-top: -0.5rem;
+  margin-right: 70%;
+  margin-bottom: 2rem;
+  border: 1px solid #C09992;
 }
 
+.divider{
+  margin-top: -0.5rem;
+  margin: 4rem 25%;
+  border: 1px solid #D1D1D1;
+}
+
+/* Image Styling */
+.image-container.left{
+	flex: 1;
+	order: 1;
+	margin-top: 1.5rem;
+	/*margin-left: 8%;*/
+}
+
+.page-description.right{
+	flex: 1;
+	order: 2;
+	padding-left: 8%;
+}
+
+/* Image Styling */
+.image-container.right{
+	flex: 1;
+	margin-top: 1.5rem;
+	/*margin-left: 8%;*/
+}
+
+.page-description.left{
+	flex: 1;
+	padding-right: 8%;
+}
+
+.project-navigation{
+	margin: 6rem 10%;
+	text-align: right;
+}
 
 /* MEDIA QUERIES */
 /* Screen size below 320px */
