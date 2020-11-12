@@ -159,17 +159,17 @@ header h2{
 
 .form-section.name{
 	padding-top: 2rem;
-	margin-bottom: -2rem;
+	margin-bottom: -3rem;
 	margin-left: -1rem;
 	margin-right: 5rem;
 	display: inline-block;
 }
 
 .form-section.block{
-	padding-top: 2rem;
+	padding-top: 3rem;
 	margin-bottom: -2rem;
 	margin-left: -1rem;
-	margin-right: 5rem;
+	margin-right: 6.8rem;
 	display: block;
 }
 
