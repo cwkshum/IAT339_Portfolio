@@ -40,13 +40,23 @@ img{
 	width: 60%;
 }
 
+ul{
+	list-style-type: none;
+	margin-left: -2.5rem;
+}
+
+li{
+	margin-top: 0.5rem;
+}
+
 /* Navigation Styling */
 .main-nav{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	background: #ffffff;
-	padding: 1.5rem 8%;
+	padding: 1.5rem 9%;
+	box-shadow: 1px 1px 5px #D0D0D0;
 }
 
 /* Logo in Navigation */
@@ -87,19 +97,25 @@ img{
 
 /* Header Styling */
 header{
-	background: #AE3034;
+	/*background: #AE3034;*/
 	margin-top: 0;
 }
 
 .sub-header{
 	margin-bottom: 1.5rem;
-	padding: 6rem 3.8rem;
+	padding: 5rem 10%;
 }
 
 header h1{
-	color: #ffffff;
+	/*color: #ffffff;*/
 	display: inline-block;
-	padding-bottom: 0.5rem;
+	font-size: 3rem;
+	/*padding-bottom: 0.5rem;*/
+}
+
+header h2{
+	margin-top: -1rem;
+	font-size: 1rem;
 }
 
 /* Content Container Styling */
@@ -108,15 +124,16 @@ header h1{
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin-top: 1rem;
-	padding: 2.5rem;
+	padding: 2.5rem 0;
+	margin-right: 10%;
+	margin-left: 10%;
 }
 
 /* Page Description Styling */
 .page-description{
 	flex: 2;
 	order: 1;
-	padding-right: 2rem;
-	padding-left: 1rem;
+	padding-right: 8%;
 }
 
 /* Form Styling */
@@ -140,12 +157,20 @@ header h1{
 	margin-left: 0.8rem;
 }
 
-.form-section{
+.form-section.name{
 	padding-top: 2rem;
 	margin-bottom: -2rem;
 	margin-left: -1rem;
 	margin-right: 5rem;
 	display: inline-block;
+}
+
+.form-section.block{
+	padding-top: 2rem;
+	margin-bottom: -2rem;
+	margin-left: -1rem;
+	margin-right: 5rem;
+	display: block;
 }
 
 .form-section p{
@@ -166,23 +191,33 @@ header h1{
 	padding: 0.5rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0.7rem;
-	border: 1px solid #bbb;
+	border: 1px solid #bbbbbb;
 	font-family: 'Open Sans', sans-serif;
 	transition: 0.5s;
 }
 
-.text-input:hover{
+.text-input:hover, textarea:hover{
 	border: 1px solid #C09992;
 	background: #F5F5F5;
 }
 
-.text-input:focus{
+.text-input:focus, textarea:focus{
 	border: 1px solid #C09992;
 	background: #DDC7C4;
 }
 
+/* Text Area Styling */
+textarea{
+	width: 100%;
+	padding: 0.5rem;
+	margin-top: 0.5rem;
+	font-family: 'Open Sans', sans-serif;
+	border: 1px solid #bbbbbb;
+	transition: 0.5s;
+}
+
 /* Change Size of Text Input Field */
-input[type = "text"], input[type="email"]{
+input[type = "text"], input[type="email"], textarea{
   	width: 100%;
 }
 
@@ -316,7 +351,7 @@ footer li{
 		font-size: 0.75rem;
 	}
 
-	.main-nav{
+/*	.main-nav{
 		padding: 0.4rem 2.5rem;
 	}
 
@@ -351,7 +386,7 @@ footer li{
 		margin-right: 0.1rem;
 		padding: 0;
 		font-size: 1.1rem;
-	}
+	}*/
 
 	footer{
 		flex-direction: column;
@@ -377,7 +412,7 @@ footer li{
 /* Screen size of 480px - 1040px */
 @media screen and (min-width:30rem) and (max-width:65rem){
 
-	.nav-logo {
+/*	.nav-logo {
 		flex: 3;
 		margin-left: 0;
 	}
@@ -398,7 +433,7 @@ footer li{
 		position: absolute;
 		right: 2.5rem;
 	  display: none;
-	}
+	}*/
 
 	footer {
 		flex-direction: column;
@@ -426,23 +461,10 @@ footer li{
 	}
 }
 
-/* Screen size of 1040px - 1440px */
-@media screen and (min-width:65rem) and (max-width:90rem){
-
-	.footer-social img{
-		width: 20%;
-		margin-right: 0.5rem;
-	}
-
-	#scrollUpbtn {
-		right: 0.2rem;
-	}
-}
-
 
 /* ADDITIONAL BREAKPOINTS FOR MOBILE NAV */
 /* Screen size below 320px */
-@media screen and (max-width:20rem){
+/*@media screen and (max-width:20rem){
 
 	.main-nav, .mobile-nav, .nav-link-section {
 		display: block;
@@ -451,18 +473,18 @@ footer li{
 	.nav-link-section a {
 		display: none;
 	}
-}
+}*/
 
 /* At exactly 320px */
-@media screen and (width:20rem){
+/*@media screen and (width:20rem){
 
 	.nav-logo {
 		margin-left: -2rem;
 	}
-}
+}*/
 
 /* Screen size of 304px - 384px */
-@media screen and (min-width:19rem) and (max-width:24rem){
+/*@media screen and (min-width:19rem) and (max-width:24rem){
 
 	.nav-logo img {
 		padding-left: 0;
@@ -471,10 +493,10 @@ footer li{
 	.mobile-nav {
 		right: 1rem;
 	}
-}
+}*/
 
 /* Screen size below 960px */
-@media screen and (max-width:60rem){
+/*@media screen and (max-width:60rem){
 
 	.main-nav {
 		display: block;
@@ -501,20 +523,15 @@ footer li{
 	.nav-link-section a {
 		display: none;
 	}
-
-	/* Adjust Placement of Scroll to top Botton*/
-	#scrollUpbtn {
-		right: 1.5rem;
-	}
-}
+}*/
 
 /* Screen size above 960px */
-@media screen and (min-width: 60rem){
+/*@media screen and (min-width: 60rem){
 
 	.mobile-nav {
 		display: none;
 	}
-}
+}*/
 
 
 
@@ -523,7 +540,7 @@ footer li{
 /* Screen size below 480px */
 @media screen and (max-width:30rem){
 	.sub-header{
-		padding: 2.5rem 3.8rem;
+		padding: 2.5rem 10%;
 	}
 
 	.sub-header h1{
@@ -557,7 +574,7 @@ footer li{
 @media screen and (min-width:30rem) and (max-width: 50rem){
 
 	.sub-header{
-		padding: 3rem 3.8rem;
+		padding: 3rem 10%;
 	}
 
 	.sub-header h1{

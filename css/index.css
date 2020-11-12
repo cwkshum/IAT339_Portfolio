@@ -1,35 +1,32 @@
 /* Header Styling */
 .main-header{
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../img/header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 9rem 3.8rem;
+  /*background: #DDC7C4;*/
+  padding: 6rem 10%;
+  /*margin-bottom: 2rem;*/
 }
 
 .main-header h1{
   font-size: 4rem;
-  text-shadow: 0.3rem 0.3rem 2rem #000000;
+  color: #C09992;
 }
 
 .main-header h2{
-  color: #ffffff;
+  color: #C09992;
   width: 60%;
-  margin-top: -1.5rem;
-  text-shadow: 0.3rem 0.3rem 2rem #000000;
+  margin-top: -10.5rem;
+  margin-left: 0.3rem;
+}
+
+.main-header h3{
+  color: #C09992;
+  width: 60%;
+  margin-top: 6.5rem;
+  margin-left: 0.3rem;
 }
 
 .page-contents{
-  /*margin: 4rem 6rem;*/
   margin: 4rem 10%;
 }
-
-/*.subheading{
-  padding-bottom: 0.8rem;
-  border-bottom: 2px solid;
-  margin-right: 40%;
-}*/
 
 hr{
   margin-top: -0.5rem;
@@ -92,7 +89,6 @@ hr{
   .main-header h2{
     width: 2rem;
     font-size: 0.75rem;
-    margin-top: -1.5rem;
   }
 }
 
@@ -112,53 +108,6 @@ hr{
     font-size: 0.75rem;
     margin-top: -1.5rem;
   }
-
-  .container {
-    flex-direction: column;
-  }
-
-  .page-description p, .seeda-benefits-container p{
-    max-width: 100%;
-  }
-
-  #about-seerem .image-container{
-    margin: 0 auto;
-    margin-top: 2rem;
-    max-width: 90%;
-  }
-
-  .service-listing-container{
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
-  .seeda-features-container{
-    order: 1;
-    padding-left: 1rem;
-    margin-top: -3rem;
-  }
-
-  .features.image-container{
-    order: 2;
-    margin-top: -0.5rem;
-    max-width: 90%;
-    padding-left: 2rem;
-  }
-
-  .seeda-benefits-container {
-    padding-left: 1rem;
-    margin-top: -3rem;
-  }
-
-  .benefits.image-container{
-    margin-top: -1rem;
-    max-width: 90%;
-    padding-left: 2rem;
-  }
-
-  #services.container{
-    margin-top: -3rem;
-  }
 }
 
 /* Screen size of 480px - 800px */
@@ -174,11 +123,6 @@ hr{
   .main-header h2{
     width: 17rem;
     font-size: 1rem;
-    margin-top: -1.5rem;
-  }
-
-  .container {
-    flex-direction: column;
   }
 
 
@@ -198,7 +142,6 @@ hr{
   .main-header h2{
     width: 22rem;
     font-size: 1.25rem;
-    margin-top: -1.8rem;
   }
 
 
@@ -209,6 +152,5 @@ hr{
   .main-header h2 {
     width: 26rem;
     font-size: 1.5rem;
-    margin-top: -1.8rem;
   }
 }
