@@ -7,6 +7,15 @@
   background-attachment: fixed;
 }
 
+/* Page Description Styling */
+.page-description{
+	flex: 1;
+}
+
+.overview-button{
+	margin-top: 3rem;
+}
+
 /* Image Styling */
 .image-container{
 	flex: 1;
@@ -23,11 +32,18 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-bottom: 3rem;
+	margin: 3rem 9% 5rem;
+	text-align: center;
 }
 
 .project-description div{
-	margin-right: 14%;
+	/*margin-right: 14%;*/
+	flex: 1;
+}
+
+.tools-container{
+	border-right: 1px solid #DDC7C4;
+	border-left: 1px solid #DDC7C4;
 }
 
 hr{
@@ -57,6 +73,11 @@ hr{
 	padding-left: 8%;
 }
 
+.page-description.right img{
+	width: 100%;
+}
+
+
 /* Image Styling */
 .image-container.right{
 	flex: 1;
@@ -70,7 +91,7 @@ hr{
 }
 
 .project-navigation{
-	margin: 6rem 10%;
+	margin: 6rem 9.5%;
 	text-align: right;
 }
 
@@ -84,31 +105,6 @@ hr{
 	p{
 		max-width: 100%;
 	}
-
-	.image-container{
-		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 100%;
-	}
-
-	.form-container {
-		margin-left: 0;
-	}
-
-	.account-form{
-		margin-left: -0.3rem;
-		margin-right: -1.5rem;
-	}
-
-	.form-section{
-		display: block;
-		margin-right: 1.5rem;
-		margin-bottom: -1.5rem;
-	}
-
-	input[type = "text"], input[type="email"]{
-    	width: 80%;
-  	}
 
 	.action-btn {
 		padding-left: 1rem;
@@ -140,17 +136,6 @@ hr{
 		margin-top: 2rem;
 		max-width: 70%;
 	}
-
-	.account-form{
-		margin-left: -0.3rem;
-		margin-right: 1rem;
-	}
-
-	.form-section{
-		display: block;
-		margin-right: 1rem;
-		margin-bottom: -1.5rem;
-	}
 }
 
 /* Screen size of 480px - 800px */
@@ -162,9 +147,6 @@ hr{
 		max-width: 75%;
 	}
 
-	.confirmation-container{
-		margin: 2rem 1.5rem;
-	}
 }
 
 /* Screen size of 800px - 896px */
@@ -186,8 +168,9 @@ hr{
 }
 
 /* Screen size of 896px - 1088px */
-@media screen and (min-width: 56rem) and (max-width: 68rem){
+@media screen and (min-width: 56rem) and (max-width: 80rem){
 
+	/*body{background: red;}*/
 	.container{
 		flex-direction: column;
 	}
@@ -201,82 +184,24 @@ hr{
 		margin-top: 2rem;
 		max-width: 70%;
 	}
-
-	.account-form{
-		margin-left: -0.2rem;
-	}
-
-	.form-section{
-		width: 40%;
-		margin-bottom: -1.5rem;
-		margin-right: 5rem;
-	}
 }
 
 /* Screen size of 1088px - 1248px */
 @media screen and (min-width: 68rem) and (max-width: 78rem){
 
-	.account-form{
-		margin-left: -0.2rem;
-	}
-
-    .form-section{
-		width: 40%;
-		margin-bottom: -1.5rem;
-		margin-right: 10%;
-	}
 }
 
 /* Screen size of 1248px - 1440px */
-@media screen and (min-width: 78rem) and (max-width: 90rem){
+@media screen and (min-width: 68rem) and (max-width: 85rem){
 
-	.form-container{
-		padding-left: 5%;
-	}
-
-	.account-form{
-		margin-left: -0.2rem;
-	}
-
-	.form-section{
-		width: 40%;
-		margin-bottom: -1.5rem;
-		margin-right: 10%;
-	}
 }
 
 /* Screen size of 1440px - 1728px */
 @media screen and (min-width: 90rem) and (max-width: 108rem){
 
-	.form-container{
-		padding-left: 5%;
-	}
-
-	.account-form{
-		margin-left: -0.2rem;
-	}
-
-	.form-section{
-		width: 40%;
-		margin-bottom: -1.5rem;
-		margin-right: 10%;
-	}
 }
 
 /* Screen size above 1728px */
 @media screen and (min-width: 108rem){
 
-	.form-container{
-		padding-left: 5%;
-	}
-
-	.account-form{
-		margin-left: -0.2rem;
-	}
-
-	.form-section{
-		width: 40%;
-		margin-bottom: -1.5rem;
-		margin-right: 10%;
-	}
 }
