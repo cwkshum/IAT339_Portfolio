@@ -7,6 +7,10 @@
   background-attachment: fixed;
 }
 
+.container.center-align{
+	align-items: center;
+}
+
 /* Page Description Styling */
 .page-description{
 	flex: 1;
@@ -115,14 +119,6 @@ hr{
 /* Screen size of 320px - 480px */
 @media screen and (min-width:20rem) and (max-width:30rem){
 
-	.sub-header{
-		padding: 2.5rem 10%;
-	}
-
-	.sub-header h1{
-		font-size: 1.4rem;
-	}
-
 	.container {
 		flex-direction: column;
 	}
@@ -139,52 +135,82 @@ hr{
 }
 
 /* Screen size of 480px - 800px */
-@media screen and (min-width: 30rem) and (max-width: 50rem){
+@media screen and (min-width: 30rem) and (max-width: 48rem){
+body{background: grey;}
 
 	.image-container{
 		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 75%;
+		margin-top: 5rem;
+	}
+
+	.project-description{
+		flex-direction: row;
+		margin: 0 9% 2rem;
+		text-align: center;
+	}
+
+	.project-description li{
+		font-size: 0.8rem;
+	}
+
+	.tools-container{
+		border-right: none;
+		border-left: none;
+	}
+
+	.divider{
+	  	margin: 4rem 25% 1rem;
+	}
+
+	.image-container.left{
+		order: 2;
+	}
+
+	.page-description.right{
+		order: 1;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.page-description.left{
+		flex: 1;
+		padding-right: 0;
 	}
 
 }
 
-/* Screen size of 800px - 896px */
-@media screen and (min-width: 50rem) and (max-width: 56rem){
+
+@media screen and (min-width: 48rem) and (max-width: 80rem){
 
 	.container{
 		flex-direction: column;
 	}
 
-	p{
-		max-width: 100%;
-	}
-
 	.image-container{
 		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 75%;
+		margin-top: 5rem;
+	}
+
+	.image-container.left{
+		order: 2;
+	}
+
+	.page-description{
+		padding-right: 0;
+	}
+
+	.page-description.right{
+		order: 1;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.page-description.left{
+		flex: 1;
+		padding-right: 0;
 	}
 }
 
-/* Screen size of 896px - 1088px */
-@media screen and (min-width: 56rem) and (max-width: 80rem){
-
-	/*body{background: red;}*/
-	.container{
-		flex-direction: column;
-	}
-
-	p{
-		max-width: 100%;
-	}
-
-	.image-container{
-		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 70%;
-	}
-}
 
 /* Screen size of 1088px - 1248px */
 @media screen and (min-width: 68rem) and (max-width: 78rem){

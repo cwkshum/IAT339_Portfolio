@@ -58,7 +58,18 @@ code{
 .main-nav{
 	box-shadow: 1px 1px 5px #D0D0D0;
 	padding: 1.5rem 3rem;
+	position: relative;
+	margin: 0;
 }
+
+/*.main-nav {
+	background-color: #fff;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: fixed;
+	width: 100%;
+	margin-top: 0;
+	z-index: 2;
+}*/
 
 /* Contact Sales Container Styling */
 .contact-sales-container{
