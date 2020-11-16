@@ -45,14 +45,25 @@ hr{
 
 .project-image{
   flex: 2;
+  background: #f2edec;
+  padding: 3rem 8rem 3rem 4rem;
 }
 
 .project-image.right{
   order: 2;
+  background: #f2edec;
+  padding: 3rem 4rem 3rem 8rem;
 }
 
 .project-image img{
   width: 100%;
+}
+
+.project-image.right img{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-description-container{
@@ -131,6 +142,7 @@ hr{
 
   .project-image {
     margin-right: 10%;
+    padding: 2rem 1.5rem;
   }
 
   .project-description-container{
@@ -151,6 +163,7 @@ hr{
 
   .project-image.right{
     order: 1;
+    padding: 2rem 1.5rem;
   }
 
   .project-description-container.left{
@@ -192,15 +205,16 @@ hr{
 
   .project-display{
     flex-direction: column; 
-    margin-bottom: 2rem; 
+    margin-bottom: 4rem; 
   }
 
   .project-image {
     margin-right: 10%;
+    padding: 2rem 4rem 3rem;
   }
 
   .project-description-container{
-    margin: 0;
+    margin: 0 0 0 30%;
   }
 
   .project-description{
@@ -217,8 +231,7 @@ hr{
 
   .project-image.right{
     order: 1;
-    margin-right: 0;
-    margin-left: 10%;
+    padding: 2rem 4rem 3rem;
   }
 
   .project-description-container.left{
@@ -227,12 +240,12 @@ hr{
 
   .project-description.right{
     margin-top: -3rem;
-    margin-left: 30%;
+    margin-left: 0;
   }
 
   .project-description.left{
     margin-top: -3rem;
-    margin-right: 30%;
+    margin-right: 0;
   }
 }
 
