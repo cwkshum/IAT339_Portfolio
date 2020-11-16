@@ -1,7 +1,7 @@
 /* Header Styling */
 .main-header{
   /*background: #DDC7C4;*/
-  padding: 6rem 10%;
+  padding: 10rem 10% 4rem;
   /*margin-bottom: 2rem;*/
 }
 
@@ -13,14 +13,15 @@
 .main-header h2{
   color: #C09992;
   width: 60%;
-  margin-top: -10.5rem;
+  font-size: 1.5rem;
+  margin-top: -10rem;
   margin-left: 0.3rem;
 }
 
 .main-header h3{
   color: #C09992;
   width: 60%;
-  margin-top: 6.5rem;
+  margin-top: 6.2rem;
   margin-left: 0.3rem;
 }
 
@@ -46,6 +47,10 @@ hr{
   flex: 2;
 }
 
+.project-image.right{
+  order: 2;
+}
+
 .project-image img{
   width: 100%;
 }
@@ -54,6 +59,10 @@ hr{
   flex: 1;
   margin: auto;
   z-index: 1;
+}
+
+.project-description-container.left{
+  order: 1;
 }
 
 .project-description{
@@ -85,18 +94,18 @@ hr{
 
 /* MEDIA QUERIES */
 /* Screen size below 320px */
-@media screen and (max-width:20rem){
+/*@media screen and (max-width:20rem){
   .main-header h2{
     width: 2rem;
     font-size: 0.75rem;
   }
-}
+}*/
 
 /* Screen size below 480px */
 @media screen and (max-width:30rem){
 
   .main-header{
-    padding: 3.5rem 3.8rem;
+    padding: 8rem 0 0 9%;
   }
 
   .main-header h1{
@@ -104,35 +113,65 @@ hr{
   }
 
   .main-header h2{
-    width: 13rem;
-    font-size: 0.75rem;
-    margin-top: -1.5rem;
+    font-size: 1rem;
+    margin-top: -5.5rem;
+    width: 90%;
+  }
+
+  .main-header h3{
+    font-size: 0.8rem;
+    margin-top: 3.5rem;
+    width: 90%;
+  }
+
+  .project-display{
+    flex-direction: column; 
+    margin-bottom: 2rem; 
+  }
+
+  .project-image {
+    margin-right: 10%;
+  }
+
+  .project-description-container{
+    margin: 0 0 0 30%;
+  }
+
+  .project-description{
+    padding: 1.5rem 2rem;
+  }
+
+  .project-description h3{
+    font-size: 1rem;
+  }
+
+  .project-description a{
+    font-size: 0.6rem;
+  }
+
+  .project-image.right{
+    order: 1;
+  }
+
+  .project-description-container.left{
+    order: 2;
+  }
+
+  .project-description.right{
+    margin-top: -2rem;
+    margin-left: 0;
+  }
+
+  .project-description.left{
+    margin-top: -2rem;
+    margin-right: 0;
   }
 }
 
 /* Screen size of 480px - 800px */
-@media screen and (min-width:30rem) and (max-width: 50rem){
+@media screen and (min-width:30rem) and (max-width: 48rem){
   .main-header{
-    padding: 5rem 3.8rem;
-  }
-
-  .main-header h1{
-    font-size: 2.5rem;
-  }
-
-  .main-header h2{
-    width: 17rem;
-    font-size: 1rem;
-  }
-
-
-}
-
-/* Screen size of 800px - 960px */
-@media screen and (min-width: 50rem) and (max-width: 60rem){
-
-  .main-header{
-    padding: 6rem 3.8rem;
+    padding: 11rem 0 2rem 9%;
   }
 
   .main-header h1{
@@ -140,17 +179,86 @@ hr{
   }
 
   .main-header h2{
-    width: 22rem;
     font-size: 1.25rem;
+    margin-top: -7.5rem;
+    width: 90%;
   }
 
+  .main-header h3{
+    font-size: 1rem;
+    margin-top: 5rem;
+    width: 90%;
+  }
 
-}
+  .project-display{
+    flex-direction: column; 
+    margin-bottom: 2rem; 
+  }
 
-/* Screen size above 960px */
-@media screen and (min-width:60rem){
-  .main-header h2 {
-    width: 26rem;
-    font-size: 1.5rem;
+  .project-image {
+    margin-right: 10%;
+  }
+
+  .project-description-container{
+    margin: 0;
+  }
+
+  .project-description{
+    padding: 2rem 3rem;
+  }
+
+  .project-description h3{
+    font-size: 1.2rem;
+  }
+
+  .project-description a{
+    font-size: 0.8rem;
+  }
+
+  .project-image.right{
+    order: 1;
+    margin-right: 0;
+    margin-left: 10%;
+  }
+
+  .project-description-container.left{
+    order: 2;
+  }
+
+  .project-description.right{
+    margin-top: -3rem;
+    margin-left: 30%;
+  }
+
+  .project-description.left{
+    margin-top: -3rem;
+    margin-right: 30%;
   }
 }
+
+/* Screen size of  - 960px */
+@media screen and (min-width: 48rem) and (max-width: 60rem){
+
+  .main-header{
+    padding: 11rem 9% 2rem;
+  }
+
+  .main-header h1{
+    font-size: 2.8rem;
+  }
+
+  .main-header h2{
+    font-size: 1.25rem;
+    margin-top: -7.5rem;
+  }
+
+  .main-header h3{
+    font-size: 1rem;
+    margin-top: 5rem;
+  }
+
+  .project-description h3{
+    font-size: 1.2rem;
+  }
+}
+
