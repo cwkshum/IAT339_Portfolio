@@ -1,10 +1,14 @@
 /* Header Styling */
 .sub-header{
-  background: url(../img/seeremheader.png);
+  background: url(../img/shoeaddictionheader.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.container.center-align{
+	align-items: center;
 }
 
 /* Page Description Styling */
@@ -12,16 +16,11 @@
 	flex: 1;
 }
 
-.overview-button{
-	margin-top: 3rem;
-}
-
 /* Image Styling */
 .image-container{
 	flex: 1;
 	order: 2;
 	margin-top: 1.5rem;
-	/*margin-left: 8%;*/
 }
 
 .image-container img{
@@ -37,7 +36,6 @@
 }
 
 .project-description div{
-	/*margin-right: 14%;*/
 	flex: 1;
 }
 
@@ -56,7 +54,7 @@ hr{
 .divider{
   margin-top: -0.5rem;
   margin: 4rem 25%;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #f2edec;
 }
 
 /* Image Styling */
@@ -64,13 +62,13 @@ hr{
 	flex: 1;
 	order: 1;
 	margin-top: 1.5rem;
-	/*margin-left: 8%;*/
 }
 
 .page-description.right{
 	flex: 1;
 	order: 2;
 	padding-left: 8%;
+	padding-right: 0;
 }
 
 .page-description.right img{
@@ -82,7 +80,6 @@ hr{
 .image-container.right{
 	flex: 1;
 	margin-top: 1.5rem;
-	/*margin-left: 8%;*/
 }
 
 .page-description.left{
@@ -90,118 +87,156 @@ hr{
 	padding-right: 8%;
 }
 
+.page-description.left img{
+	width: 100%;
+}
+
 .project-navigation{
 	margin: 6rem 9.5%;
 	text-align: right;
 }
 
+
 /* MEDIA QUERIES */
 /* Screen size below 320px */
-@media screen and (max-width:20rem){
-	.container {
-		flex-direction: column;
-	}
-
-	p{
-		max-width: 100%;
-	}
-
-	.action-btn {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-}
-
-/* Screen size of 320px - 480px */
-@media screen and (min-width:20rem) and (max-width:30rem){
-
-	.sub-header{
-		padding: 2.5rem 10%;
-	}
-
-	.sub-header h1{
-		font-size: 1.4rem;
-	}
+@media screen and (max-width:30rem){
 
 	.container {
 		flex-direction: column;
-	}
-
-	p{
-		max-width: 100%;
 	}
 
 	.image-container{
 		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 70%;
+		margin-top: 5rem;
+	}
+
+	.project-description{
+		flex-direction: column;
+		margin: 0 9%;
+	}
+
+	.tools-container{
+		border-right: none;
+		border-left: none;
+	}
+
+	.divider{
+	  	margin: 3rem 25% 1rem;
+	}
+
+	.image-container.left{
+		order: 2;
+	}
+
+	.page-description{
+		padding-right: 0;
+	}
+
+	.page-description.right{
+		order: 1;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.page-description.left{
+		flex: 1;
+		padding-right: 0;
+	}
+
+	.project-navigation{
+		margin: 3rem 9.5% 6rem;
 	}
 }
 
 /* Screen size of 480px - 800px */
-@media screen and (min-width: 30rem) and (max-width: 50rem){
+@media screen and (min-width: 30rem) and (max-width: 48rem){
+	
+	.container {
+		flex-direction: column;
+	}
+
+	.sub-header h1{
+		font-size: 1.8rem;
+	}
 
 	.image-container{
 		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 75%;
+		margin-top: 5rem;
 	}
 
+	.project-description{
+		margin: 0 9% 2rem;
+	}
+
+	.project-description li{
+		font-size: 0.8rem;
+	}
+
+	.tools-container{
+		border-right: none;
+		border-left: none;
+	}
+
+	.divider{
+	  	margin: 4rem 25% 1rem;
+	}
+
+	.image-container.left{
+		order: 2;
+	}
+
+	.page-description{
+		padding-right: 0;
+	}
+
+	.page-description.right{
+		order: 1;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.page-description.left{
+		flex: 1;
+		padding-right: 0;
+	}
+
+	.project-navigation{
+		margin: 3rem 9.5% 6rem;
+	}
 }
 
-/* Screen size of 800px - 896px */
-@media screen and (min-width: 50rem) and (max-width: 56rem){
+
+@media screen and (min-width: 48rem) and (max-width: 80rem){
 
 	.container{
 		flex-direction: column;
 	}
 
-	p{
-		max-width: 100%;
+	.sub-header h1{
+		font-size: 2.4rem;
 	}
 
 	.image-container{
 		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 75%;
-	}
-}
-
-/* Screen size of 896px - 1088px */
-@media screen and (min-width: 56rem) and (max-width: 80rem){
-
-	/*body{background: red;}*/
-	.container{
-		flex-direction: column;
+		margin-top: 5rem;
 	}
 
-	p{
-		max-width: 100%;
+	.image-container.left{
+		order: 2;
 	}
 
-	.image-container{
-		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 70%;
+	.page-description{
+		padding-right: 0;
 	}
-}
 
-/* Screen size of 1088px - 1248px */
-@media screen and (min-width: 68rem) and (max-width: 78rem){
+	.page-description.right{
+		order: 1;
+		padding-left: 0;
+		padding-right: 0;
+	}
 
-}
-
-/* Screen size of 1248px - 1440px */
-@media screen and (min-width: 68rem) and (max-width: 85rem){
-
-}
-
-/* Screen size of 1440px - 1728px */
-@media screen and (min-width: 90rem) and (max-width: 108rem){
-
-}
-
-/* Screen size above 1728px */
-@media screen and (min-width: 108rem){
-
+	.page-description.left{
+		flex: 1;
+		padding-right: 0;
+	}
 }
