@@ -74,7 +74,7 @@ hr{
 
 .divider{
   margin-top: -0.5rem;
-  margin: 4rem 25%;
+  margin: 4rem 25% 0;
   border: 1px solid #f2edec;
 }
 
