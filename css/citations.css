@@ -1,0 +1,26 @@
+.sub-header{
+	background: #f2edec;
+}
+
+.container{
+	flex-direction: column;
+	padding: 1rem 1rem;
+	margin-bottom: 2rem;
+}
+
+
+hr{
+	margin-top: -0.5rem;
+	margin-right: 70%;
+	margin-bottom: 2rem;
+ 	border: 1px solid #C09992;
+}
+
+/* Citation List Styling */
+.citations ul{
+	list-style-type: none;
+}
+
+.citations li{
+	margin-top: 1.2rem;
+}
