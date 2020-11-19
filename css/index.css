@@ -1,8 +1,15 @@
+.main-nav{
+  visibility: hidden;
+  opacity: 0;
+}
+
 /* Header Styling */
 .main-header{
-  /*background: #DDC7C4;*/
-  padding: 10rem 10% 4rem;
-  /*margin-bottom: 2rem;*/
+  padding: 4rem 10% 4rem;
+  margin-bottom: -2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .main-header h1{
@@ -82,12 +89,10 @@ hr{
 }
 
 .project-description.right{
-  /*margin-right: 20%;*/
   margin-left: -4rem;
 }
 
 .project-description.left{
-  /*margin-left: 20%;*/
   margin-right: -4rem;
 }
 
@@ -102,21 +107,47 @@ hr{
   color: #ffffff;
 }
 
+.header-content{
+  flex: 3;
+}
+
+.side-nav{
+  flex: 1;
+}
+
+.side-nav ul{
+  list-style: none;
+  text-align: right;
+  margin-top: 0rem;
+}
+
+.side-nav li{
+  margin-bottom: 2.2rem;
+  font-size: 1.1rem;
+}
+
+.side-nav a{
+  color: #C09992;
+  border-right: #DDC7C4 3px solid;
+  padding: 0.4rem 0.8rem 0.4rem 0;
+  transition: all .3s ease-in-out;
+}
+
+.side-nav a:hover{
+  border-right: #DDC7C4 5px solid;
+  background: #DDC7C4;
+  color: #ffffff;
+  padding: 0.4rem 18% 0.4rem 1.5rem;
+}
+
 
 /* MEDIA QUERIES */
-/* Screen size below 320px */
-/*@media screen and (max-width:20rem){
-  .main-header h2{
-    width: 2rem;
-    font-size: 0.75rem;
-  }
-}*/
-
 /* Screen size below 480px */
 @media screen and (max-width:30rem){
 
   .main-header{
     padding: 8rem 0 0 9%;
+    margin-bottom: -1.5rem;
   }
 
   .main-header h1{
@@ -179,12 +210,22 @@ hr{
     margin-top: -2rem;
     margin-right: 0;
   }
+
+  .main-nav{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .side-nav{
+    display: none;
+  }
 }
 
 /* Screen size of 480px - 800px */
 @media screen and (min-width:30rem) and (max-width: 48rem){
   .main-header{
-    padding: 11rem 0 2rem 9%;
+    padding: 9rem 0 0 9%;
+    margin-bottom: -1rem;
   }
 
   .main-header h1{
@@ -247,13 +288,22 @@ hr{
     margin-top: -3rem;
     margin-right: 0;
   }
+
+  .main-nav{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .side-nav{
+    display: none;
+  }
 }
 
 /* Screen size of  - 960px */
 @media screen and (min-width: 48rem) and (max-width: 60rem){
 
   .main-header{
-    padding: 11rem 9% 2rem;
+    padding: 4rem 9% 0;
   }
 
   .main-header h1{
@@ -268,10 +318,31 @@ hr{
   .main-header h3{
     font-size: 1rem;
     margin-top: 5rem;
+    width: 80%;
   }
 
   .project-description h3{
     font-size: 1.2rem;
   }
+
+  .side-nav ul{
+    margin-top: -0.5rem;
+  }
+
+  .side-nav li{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+
+
+  /*.side-nav a{
+    border-right: #C09992 3px solid;
+    padding: 0.6rem;
+  }
+
+  .side-nav a:hover{
+    border-right: #C09992 5px solid;
+    padding: 0.6rem 15% 0.6rem 1.5rem;
+  }*/
 }
 

@@ -50,7 +50,7 @@ li{
 
 .sub-header{
 	margin-bottom: 1.5rem;
-	padding: 10rem 10% 5rem;
+	padding: 9rem 10% 5rem;
 }
 
 header h1{
@@ -236,6 +236,7 @@ footer{
 
 	.footer-copyright{
 		order: 2;
+		margin-top: -0.5rem;
 	}
 
 	.footer-links{
@@ -387,12 +388,14 @@ footer{
 
 .main-nav {
 	background-color: #fff;
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
 	position: fixed;
 	width: 100%;
 	margin-top: 0;
 	z-index: 2;
-	display: block;
+	visibility: visible;
+  	opacity: 1;
+  	transition: visibility 0.2s, opacity 0.3s linear;
 }
 
 .main-nav ul {
@@ -407,7 +410,6 @@ footer{
 	margin-top: 0;
 }
 
-/*.main-nav li a {*/
 .main-nav .nav-link{
 	display: inline-block;
 	font-size: 1.2rem;
@@ -415,6 +417,7 @@ footer{
 	padding-bottom: 0.2rem;
 	border-bottom: 2px solid #ffffff;
 	color: #C09992;
+	transition: border-bottom 0.5s, color 0.5s;
 }
 
 .main-nav .nav-link:hover, .main-nav .nav-link:focus{
@@ -425,21 +428,13 @@ footer{
 .nav-logo {
 	display: block;
 	float: left;
-	/*font-size: 2em;*/
-	padding-left: 10%;
-	/*padding-bottom: 1rem;*/
+	padding-left: 9.5%;
 	margin-top: 1.3rem;
-	/*color: #C09992;*/
-	/*background: black;*/
 }
 
 .nav-logo img{
-	max-width: 45%;
+	max-width: 35%;
 }
-
-/*.nav-logo:hover, .nav-logo:focus{
-	color: #7B7B7B;
-}*/
 
 /* menu */
 
@@ -519,26 +514,32 @@ footer{
 /* 48em = 768px */
 
 @media (min-width: 48rem) {
-  .main-nav ul{
-  	/*margin-right: 10%;*/
-  	margin: 2rem 10%;
-  }
-  .main-nav li {
-    float: left;
-  }
+  
+	.nav-logo img{
+		max-width: 45%;
+		margin-top: -0.3rem;
+	}
 
-  .main-nav li a {
-	padding: 0;
-	margin-left: 3rem;
-  }
+	.main-nav ul{
+  		margin: 1.5rem 10% 1.5rem;
+  	}
 
-  .main-nav .nav-link-section {
-  	clear: none;
-    float: right;
-    max-height: none;
-  }
+  	.main-nav li {
+    	float: left;
+  	}
 
-  .main-nav .menu-icon {
-    display: none;
-  }
+  	.main-nav li a {
+		padding: 0;
+		margin-left: 3rem;
+  	}
+
+  	.main-nav .nav-link-section {
+	  	clear: none;
+	    float: right;
+    	max-height: none;
+  	}
+
+  	.main-nav .menu-icon {
+    	display: none;
+  	}
 }
