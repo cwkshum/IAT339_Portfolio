@@ -1,13 +1,16 @@
-const nav = document.querySelector('.main-nav');
+var nav = document.querySelector('.main-nav');
+var matchScreen;
 
-function myFunction(x) {
-	if (x.matches) { 
+// Check if Navigation Bar should be Visible
+function showNavigation(screenSize) {
+	if (screenSize.matches) { 
     matchScreen = true;
-
+    // Hide Navigation
     nav.style.visibility = 'hidden';
     nav.style.opacity = '0';
 	} else {
     matchScreen = false;
+    // Show Navigation
     nav.style.visibility = 'visible';
     nav.style.opacity = '1';
 	}
@@ -16,17 +19,20 @@ function myFunction(x) {
 
 window.onscroll =  function(){
   if ((matchScreen && document.body.scrollTop > 180) || (matchScreen && document.documentElement.scrollTop > 180)) {
+    // show navigation bar
     nav.style.visibility = 'visible';
     nav.style.opacity = '1';
   } else if (!matchScreen){
+    // show navigation bar
     nav.style.visibility = 'visible';
     nav.style.opacity = '1';
   } else{
+    // hide navigation bar
     nav.style.visibility = 'hidden';
     nav.style.opacity = '0';
   }
-}
+};
 
-var x = window.matchMedia("(min-width: 48rem)");
-myFunction(x); // Call listener function at run time
-x.addListener(myFunction);
+var screenSize = window.matchMedia("(min-width: 48rem)");
+showNavigation(screenSize); // Call listener function at run time
+screenSize.addListener(showNavigation);
