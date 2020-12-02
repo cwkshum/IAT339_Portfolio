@@ -74,6 +74,11 @@
   margin: 4rem 10%;
 }
 
+.anchor{
+  padding-top: 8rem;
+  margin-top: -8rem;
+}
+
 /* Underline Divider Styling */
 hr{
   margin-top: -0.5rem;
@@ -228,6 +233,11 @@ hr{
   .side-nav{
     display: none;
   }
+
+  .anchor{
+    padding-top: 0;
+    margin-top: 4rem;
+  }
 }
 
 /* Screen size of 480px - 800px */
@@ -306,9 +316,14 @@ hr{
   .side-nav{
     display: none;
   }
+
+  .anchor{
+    padding-top: 0;
+    margin-top: 4rem;
+  }
 }
 
-/* Screen size of  - 960px */
+/* Screen size of 786px - 960px */
 @media screen and (min-width: 48rem) and (max-width: 60rem){
 
   .main-header{
@@ -341,6 +356,11 @@ hr{
   .side-nav li{
     margin-bottom: 2rem;
     font-size: 0.9rem;
+  }
+
+  .anchor{
+    padding-top: 0;
+    margin-top: 4rem;
   }
 }
 

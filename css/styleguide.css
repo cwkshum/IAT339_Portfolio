@@ -4,10 +4,12 @@
 	margin-right: 4rem;
 }
 
-#container .box1{
-	padding: 2rem;
+.styleguide-content{
+	margin-top: 3.2rem;
+	margin-right: 1rem;
 }
 
+/* Page Navigation */
 .side-navigation{
 	padding: 0 2rem;
 	position: fixed;
@@ -16,13 +18,7 @@
 	z-index: 1;
 }
 
-.box2{
-	flex: 2;
-	margin-top: 3.2rem;
-	margin-right: 1rem;
-}
-
-/* Page Lavigation Links*/
+/* Page Navigation Links*/
 .page-nav{
 	display: block;
 	margin-bottom: 0.8rem;
@@ -54,7 +50,6 @@ code{
 	word-wrap: break-word;
 }
 
-
 /* Navigation Styling */
 .main-nav{
 	box-shadow: 1px 1px 5px #D0D0D0;
@@ -75,18 +70,18 @@ code{
 	border-bottom: 2px solid #7B7B7B;
 }
 
-/* Contact Sales Container Styling */
-.contact-sales-container{
+/* Form Container Styling */
+.form-container{
 	flex: 1;
-	padding: 2rem;
+	padding: 1rem 0;
 	margin-left: 0;
 	margin-right: 10rem;
 	margin-bottom: 3rem;
 	background: #ffffff;
 }
 
-/* Contact Sales Subheading Styling */
-.contact-sales-container h4{
+/* Form Subheading Styling */
+.form-container h4{
 	margin-left: 0.8rem;
 }
 
@@ -114,10 +109,7 @@ code{
 	margin-right: 10%;
 }
 
-.form-section p{
-	margin-top: -0.3rem;
-}
-
+/* Project Display Styling */
 .project-display{
   display: flex;
   flex-direction: row;
@@ -209,7 +201,7 @@ code{
 		box-shadow: 1px 1px 5px grey;
 	}
 
-	.box2{
+	.styleguide-content{
 		margin-top: 0;
 		margin-left: 1rem;
 	}
@@ -229,17 +221,28 @@ code{
 		word-break: break-word;
 	}
 
-	.contact-sales-container{
+	.form-container{
 		margin-right: 0;
-	}
-
-	.solo.form-section{
-		width: 50%;
 	}
 
 	.form-section{
 		display: block;
+		margin-right: 1rem;
+		margin-bottom: -1.5rem;
 		width: 90%;
+	}
+
+	.form-section.name{
+		display: block;
+		width: 89%;
+	}
+
+	.contact-form {
+		margin-left: -0.3rem;
+	}
+
+	.solo.form-section{
+		width: 50%;
 	}
 
 	.nav-logo img{
@@ -313,7 +316,7 @@ code{
 		box-shadow: 1px 1px 5px grey;
 	}
 
-	.box2{
+	.styleguide-content{
 		margin-top: 0;
 		margin-left: 1rem;
 	}
@@ -333,7 +336,7 @@ code{
 		word-break: break-word;
 	}
 
-	.contact-sales-container{
+	.form-container{
 		margin-right: 0;
 	}
 
@@ -344,6 +347,11 @@ code{
 	.form-section{
 		display: block;
 		width: 100%;
+	}
+
+	.form-section.name{
+		display: block;
+		width: 89%;
 	}
 
 	.project-display{
@@ -408,7 +416,7 @@ code{
 		box-shadow: 1px 1px 5px grey;
 	}
 
-	.box2{
+	.styleguide-content{
 		margin-top: 0;
 		margin-left: 1rem;
 	}
@@ -458,7 +466,7 @@ code{
 		box-shadow: 1px 1px 5px grey;
 	}
 
-	.box2{
+	.styleguide-content{
 		margin-top: 0;
 		margin-left: 1rem;
 	}
