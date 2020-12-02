@@ -75,15 +75,6 @@ code{
 	border-bottom: 2px solid #7B7B7B;
 }
 
-/*.main-nav {
-	background-color: #fff;
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-	position: fixed;
-	width: 100%;
-	margin-top: 0;
-	z-index: 2;
-}*/
-
 /* Contact Sales Container Styling */
 .contact-sales-container{
 	flex: 1;
@@ -127,43 +118,6 @@ code{
 	margin-top: -0.3rem;
 }
 
-/*.project-display{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.project-image{
-	flex: 2;
-}
-
-.project-image img{
-	width: 100%;
-}
-
-.project-description-container{
-	flex: 1;
-	margin: auto;
-}
-
-.project-description{
-	background: #DDC7C4;
-	margin-right: 20%;
-	margin-left: -4rem;
-	padding: 3rem 4rem;
-}
-
-.project-description h3{
-	color: #ffffff;
-	margin-top: 0;
-	margin-bottom: -0.8rem;
-	font-size: 1.5rem;
-}
-
-.project-description p{
-	color: #ffffff;
-}*/
-
 .project-display{
   display: flex;
   flex-direction: row;
@@ -197,7 +151,6 @@ code{
 .project-description-container{
   flex: 1;
   margin: auto;
-  /*z-index: 1;*/
 }
 
 .project-description-container.left{

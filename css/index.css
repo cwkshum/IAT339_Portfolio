@@ -1,3 +1,4 @@
+/* Navigation */
 .main-nav{
   visibility: hidden;
   opacity: 0;
@@ -32,10 +33,48 @@
   margin-left: 0.3rem;
 }
 
+/* Header Text */
+.header-content{
+  flex: 3;
+}
+
+/* Header Links */
+.side-nav{
+  flex: 1;
+}
+
+/* Header Link Styling */
+.side-nav ul{
+  list-style: none;
+  text-align: right;
+  margin-top: 0rem;
+}
+
+.side-nav li{
+  margin-bottom: 2.2rem;
+  font-size: 1.1rem;
+}
+
+.side-nav a{
+  color: #C09992;
+  border-right: #DDC7C4 3px solid;
+  padding: 0.4rem 0.8rem 0.4rem 0;
+  transition: all .3s ease-in-out;
+}
+
+.side-nav a:hover{
+  border-right: #DDC7C4 5px solid;
+  background: #DDC7C4;
+  color: #ffffff;
+  padding: 0.4rem 18% 0.4rem 1.5rem;
+}
+
+/* Page Content Styling */
 .page-contents{
   margin: 4rem 10%;
 }
 
+/* Underline Divider Styling */
 hr{
   margin-top: -0.5rem;
   margin-right: 70%;
@@ -43,6 +82,7 @@ hr{
   border: 1px solid #C09992;
 }
 
+/* Project Display Styling */
 .project-display{
   display: flex;
   flex-direction: row;
@@ -50,20 +90,21 @@ hr{
   margin-bottom: 6rem;
 }
 
+/* Project Display Image */
 .project-image{
   flex: 2;
   background: #f2edec;
   padding: 3rem 8rem 3rem 4rem;
 }
 
+.project-image img{
+  width: 100%;
+}
+
 .project-image.right{
   order: 2;
   background: #f2edec;
   padding: 3rem 4rem 3rem 8rem;
-}
-
-.project-image img{
-  width: 100%;
 }
 
 .project-image.right img{
@@ -73,6 +114,7 @@ hr{
   margin-right: auto;
 }
 
+/* Project Display Description */
 .project-description-container{
   flex: 1;
   margin: auto;
@@ -105,39 +147,6 @@ hr{
 
 .project-description p{
   color: #ffffff;
-}
-
-.header-content{
-  flex: 3;
-}
-
-.side-nav{
-  flex: 1;
-}
-
-.side-nav ul{
-  list-style: none;
-  text-align: right;
-  margin-top: 0rem;
-}
-
-.side-nav li{
-  margin-bottom: 2.2rem;
-  font-size: 1.1rem;
-}
-
-.side-nav a{
-  color: #C09992;
-  border-right: #DDC7C4 3px solid;
-  padding: 0.4rem 0.8rem 0.4rem 0;
-  transition: all .3s ease-in-out;
-}
-
-.side-nav a:hover{
-  border-right: #DDC7C4 5px solid;
-  background: #DDC7C4;
-  color: #ffffff;
-  padding: 0.4rem 18% 0.4rem 1.5rem;
 }
 
 
@@ -333,16 +342,5 @@ hr{
     margin-bottom: 2rem;
     font-size: 0.9rem;
   }
-
-
-  /*.side-nav a{
-    border-right: #C09992 3px solid;
-    padding: 0.6rem;
-  }
-
-  .side-nav a:hover{
-    border-right: #C09992 5px solid;
-    padding: 0.6rem 15% 0.6rem 1.5rem;
-  }*/
 }
 
