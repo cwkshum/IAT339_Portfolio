@@ -174,7 +174,23 @@ code{
   color: #ffffff;
 }
 
+/* Project Description Styling */
+.project-description-table{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 3rem 9% 5rem;
+	text-align: center;
+}
 
+.project-description-table section{
+	flex: 1;
+}
+
+.tools-container{
+	border-right: 1px solid #DDC7C4;
+	border-left: 1px solid #DDC7C4;
+}
 
 /* MEDIA QUERIES */
 /* Screen size of 480px or less */
@@ -214,8 +230,8 @@ code{
 	}
 
 	.anchor{
-		padding-top: 15rem;
-    	margin-top: -15rem;
+		padding-top: 18rem;
+    	margin-top: -18rem;
 	}
 
 	code{
@@ -290,6 +306,16 @@ code{
 	    margin-top: -2rem;
 	    margin-left: 0;
 	}
+
+	.project-description-table{
+		flex-direction: column;
+		margin: 0 9%;
+	}
+
+	.tools-container{
+		border-right: none;
+		border-left: none;
+	}
 }
 
 /* Screen size of 480px - 768px */
@@ -329,8 +355,8 @@ code{
 	}
 
 	.anchor{
-		padding-top: 18rem;
-    	margin-top: -18rem;
+		padding-top: 20rem;
+    	margin-top: -20rem;
 	}
 
 	code{
@@ -390,6 +416,16 @@ code{
 	    margin-top: -3rem;
 	    margin-left: 0;
 	}
+
+	.project-description-table{
+		flex-direction: column;
+		margin: 0 9%;
+	}
+
+	.tools-container{
+		border-right: none;
+		border-left: none;
+	}
 }
 
 /* Screen size of 768px - 960px */
@@ -429,8 +465,8 @@ code{
 	}
 
 	.anchor{
-		padding-top: 10rem;
-    	margin-top: -10rem;
+		padding-top: 12rem;
+    	margin-top: -12rem;
 	}
 
 	.form-section{
@@ -439,6 +475,38 @@ code{
 
   	.project-description h3{
     	font-size: 1.2rem;
+  	}
+
+  	.main-nav{
+  		padding: 3.5rem 0rem;
+  	}
+
+	.nav-logo img{
+		max-width: 45%;
+		margin-top: -5rem;
+	}
+
+	.main-nav ul{
+  		margin: -3.8rem 10% 1.5rem;
+  	}
+
+  	.main-nav li {
+    	float: left;
+  	}
+
+  	.main-nav li a {
+		padding: 0;
+		margin-left: 3rem;
+  	}
+
+  	.main-nav .nav-link-section {
+	  	clear: none;
+	    float: right;
+    	max-height: none;
+  	}
+
+  	.main-nav .menu-icon {
+    	display: none;
   	}
 }
 
@@ -485,7 +553,7 @@ code{
 }
 
 /* Screen size greater than 768px*/
-@media (min-width: 48rem) {
+@media (min-width: 60rem) {
   	.main-nav{
   		padding: 3.5rem 0rem;
   	}

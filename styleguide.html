@@ -32,7 +32,7 @@
 	  			<a href="#combinedelements" class="page-nav">Combined Elements</a>
 	  			<a href="#portfoliocomponents" class="page-nav">Portfolio Components</a>
 	  			<a href="#projectanalysis" class="page-nav">Project Analysis</a>
-	  			<!-- <a href="index.html" target="_blank" class="page-nav">Templates</a> -->
+	  			<a href="projecttemplate.html" target="_blank" class="page-nav">Template</a>
 	  		</nav>
 		</div>
 		<div id="container">
@@ -58,10 +58,10 @@
 			        	<h4>CSS Selector</h4>
 			        	<p>.nav-link</p>
 			        	<h4>Sample Code</h4>
-			        	<code>&lt;nav&gt;&lt;a href="index.html" class="nav-link"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code>
+			        	<code>&lt;nav&gt;&lt;a href="index.html" class="nav-link"&gt;Projects&lt;/a&gt;&lt;/nav&gt;</code>
 			        	<h4>Rendered Element</h4>
 			        	<nav>
-			  				<a href="index.html" class="nav-link">Home</a>
+			  				<a href="index.html" class="nav-link">Projects</a>
 						</nav>
 			      	</section>
 
@@ -160,15 +160,17 @@
 						</nav>
 			      	</section>
 
-			      	<!-- Service Listing -->
+			      	<!-- Project Display -->
 			      	<section class="element">
 			       	 	<h3>Project Display</h3>
 			       		<div class="project-display">
+			       			<!-- Project Image -->
 			       			<div class="project-image">
 			       				<img src="img/seeremproject.png" alt="SeeRem Project">
 			       			</div>
 			       			<div class="project-description-container">
 			       				<div class="project-description right">
+			       					<!-- Project Title -->
 			       					<h3>SeeRem</h3>
 			       					<p>Front-End Website</p>
 			       					<a href="seerem.html">View&nbsp;More&nbsp;&rarr;</a>
@@ -177,12 +179,42 @@
 			       		</div>
 			      	</section>
 
+			      	<!--  Project Description -->
+			      	<section class="element">
+			      		<h3>Project Description</h3>
+			      		<div class="project-description-table">
+							<!-- Project Role -->
+							<section>
+								<h3>Role</h3>
+								<ul>
+									<li>Front-end Developer</li>
+									<li>UX/UI Designer</li>
+								</ul>
+							</section>
+							<!-- Project Tools -->
+							<section class="tools-container">
+								<h3>Tools</h3>
+								<ul>
+									<li>HTML/CSS</li>
+									<li>JavaScript</li>  
+									<li>Figma</li>
+								</ul>
+							</section>
+							<!-- Project Team -->
+							<section>
+								<h3>Team</h3>
+								<ul>
+									<li>Dinuki Adikaram</li>
+								</ul>
+							</section>
+						</div>
+					</section>
+
 			      	<!-- Contact Form -->
 			      	<section>
 			        	<h3>Contact Form</h3>
 			        	<div class="form-container">
 					       	<h4>Leave a Message</h4>
-					    	<!-- Create Account Form -->
 					        <form class="contact-form">
 						        <!-- First Name Input Box -->
 						        <div class="form-section name">
@@ -204,7 +236,7 @@
 						  			<label class="form-label" for="contactmessage">Message</label><br>
 									<textarea id="contactmessage" name="contactmessage" rows="4"></textarea>
 						  		</div>
-							  	<!-- Contact Sales Submit Button -->
+							  	<!-- Contact Submit Button -->
 						  		<div class="action-btn-container">
 						  			<input class="action-btn" type="submit" value="Submit">
 						  		</div>
@@ -243,6 +275,7 @@
 			    <section id="projectanalysis" class="anchor">
 			    	<h2 class="subheading">Project Analysis</h2>
 
+			    	<!--  Project Analysis One -->
 			      	<section class="element">
 			        	<h3>Project One: SeeRem Website</h3>
 			        	<p>For this project, I worked in a team of two with the company Seeda to develop a front-end website for their SeeRem division. The objective of the project was to design and build a functioning website for SeeRem to allow their customers to learn more about their service and to connect with their sales team. By communicating with the company, I was able to learn more about the service they were offering to help my partner and I better design for the intended purpose of the website. The end product was a fully developed front-end responsive website to promote SeeRem, an application that allows teams working in remote worksites to connect with one another.</p>
@@ -261,9 +294,9 @@
 						<img src="img/seeremwireframes.png" alt="SeeRem Website Wireframes">
 						<img src="img/seeremstyleguide.png" alt="SeeRem Style Guide">
 						<img src="img/seeremmobile.png" alt="SeeRem Wesbite on Mobile">
-
 			      	</section>
 
+			      	<!--  Project Analysis Two -->
 			      	<section>
 			        	<h3>Project Two: Shoe Addiction Website</h3>
 			        	<p>Shoe Addiction is a fictional shoe store web application project, focused on the back-end handling of user requests. The goal is to create a website that would be able to handle user input and utilize a database to store and retrieve data. The website was developed in a team of three to display products offered by the store through a database, allow visitors to browse content units, and handle member registration, log in as well as customization. The overall functionality of the website was developed to help gain a better understanding of the structure in present-day e-commerce sites.</p>
@@ -290,9 +323,11 @@
 
 		<!-- Footer -->
 		<footer>
+			<!-- Copyright Information -->
 			<div class="footer-copyright">
 				<p>&#169; 2020 Carissa Shum</p>
 			</div>
+			<!-- Footer Links -->
 			<div class="footer-links">
 				<a href="styleguide.html" target="_blank">Style Guide</a>
 				<a href="https://github.com/cwkshum/IAT339_Portfolio" target="_blank">GitHub</a>
