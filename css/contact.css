@@ -47,10 +47,16 @@
 
 .form-section.block{
 	padding-top: 3rem;
-	margin-bottom: -2rem;
+	margin-bottom: -1.5rem;
 	margin-left: -1rem;
 	margin-right: 3.4rem;
 	display: block;
+}
+
+/* Button Styling */
+.action-btn-container {
+	margin-left: -1rem;
+	margin-top: 4rem;
 }
 
 /* MEDIA QUERIES */
@@ -59,6 +65,7 @@
 
 	.container {
 		flex-direction: column;
+		padding: 7rem 0 4rem;
 	}
 
 	.page-description{
@@ -81,7 +88,7 @@
 
 	.contact-form{
 		margin-right: 1rem;
-		padding-left: 1.3rem;
+		padding-left: 1.1rem;
 	}
 
 	.form-section.name{
@@ -103,6 +110,7 @@
 
 	.container{
 		flex-direction: column;
+		padding: 8rem 0 4rem;
 	}
 
 	.page-description{
@@ -125,7 +133,7 @@
 
 	.contact-form{
 		margin-right: 1rem;
-		padding-left: 1.3rem;
+		padding-left: 1.1rem;
 	}
 
 	.form-section.name{
@@ -147,6 +155,7 @@
 
 	.container{
 		flex-direction: column;
+		padding: 8rem 0 4rem;
 	}
 
 	.page-description{

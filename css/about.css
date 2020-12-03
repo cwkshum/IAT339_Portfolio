@@ -34,6 +34,7 @@ footer{
 
 	.container{
 		flex-direction: column;
+		padding: 8rem 0 6rem;
 	}
 
 	.image-container{
@@ -47,5 +48,11 @@ footer{
 	.page-description{
 		order: 1;
 		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: 65rem) and (max-width: 90rem){
+	.container{
+		padding: 10rem 0 12rem;
 	}
 }
