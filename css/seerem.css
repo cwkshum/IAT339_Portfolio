@@ -1,6 +1,10 @@
 /* Header Styling */
 .sub-header{
   background: url(../img/seeremheader.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Project Link */
