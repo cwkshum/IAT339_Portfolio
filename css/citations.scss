@@ -1,0 +1,29 @@
+$accent-colour1: #C09992;
+
+/* Header Styling */
+.sub-header{
+	background: #f2edec;
+}
+
+/* Page Content Container Styling */
+.container{
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+/* Heading Underline Styling */
+hr{
+	margin-top: -0.5rem;
+	margin-right: 70%;
+	margin-bottom: 2rem;
+ 	border: 1px solid $accent-colour1;
+}
+
+/* Citation List Styling */
+.citations ul{
+	list-style-type: none;
+}
+
+.citations li{
+	margin-top: 1.2rem;
+}

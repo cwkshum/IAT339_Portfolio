@@ -1,0 +1,373 @@
+$accent-colour1: #C09992;
+$accent-colour2: #DDC7C4;
+$accent-colour3: #f2edec;
+$background-colour: #ffffff;
+
+/* Navigation */
+.main-nav{
+  visibility: hidden;
+  opacity: 0;
+}
+  
+/* Header Styling */
+.main-header{
+  padding: 4rem 10% 4rem;
+  margin-bottom: -2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+  
+/* Header Text Container */
+.header-content{
+  flex: 3;
+}
+  
+/* Header Text Styling */
+.main-header h1{
+  font-size: 4rem;
+  color: $accent-colour1;
+}
+  
+.main-header h2{
+  color: $accent-colour1;
+  width: 60%;
+  font-size: 1.5rem;
+  margin-top: -10rem;
+  margin-left: 0.3rem;
+}
+  
+.main-header h3{
+  color: $accent-colour1;
+  width: 60%;
+  margin-top: 6.2rem;
+  margin-left: 0.3rem;
+}
+  
+/* Header Links Container */
+.side-nav{
+  flex: 1;
+}
+
+/* Header Link Styling */
+.side-nav ul{
+  list-style: none;
+  text-align: right;
+  margin-top: 0rem;
+}
+
+.side-nav li{
+  margin-bottom: 2.2rem;
+  font-size: 1.1rem;
+}
+
+.side-nav a{
+  color: $accent-colour1;
+  border-right: $accent-colour2 3px solid;
+  padding: 0.4rem 0.8rem 0.4rem 0;
+  transition: all .3s ease-in-out;
+}
+
+.side-nav a:hover{
+  border-right: $accent-colour2 5px solid;
+  background: $accent-colour2;
+  color: $background-colour;
+  padding: 0.4rem 18% 0.4rem 1.5rem;
+}
+
+/* Page Content Styling */
+.page-contents{
+  margin: 4rem 10%;
+}
+  
+/* For Page anchoring */
+.anchor{
+  padding-top: 8rem;
+  margin-top: -8rem;
+}
+
+/* Underline Divider Styling */
+hr{
+  margin-top: -0.5rem;
+  margin-right: 70%;
+  margin-bottom: 4rem;
+  border: 1px solid $accent-colour1;
+}
+
+/* Project Display Styling */
+.project-display{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+}
+
+/* Project Display Image */
+.project-image{
+  flex: 2;
+  background: $accent-colour3;
+  padding: 3rem 8rem 3rem 4rem;
+}
+
+.project-image img{
+  width: 100%;
+}
+
+.project-image.right{
+  order: 2;
+  background: $accent-colour3;
+  padding: 3rem 4rem 3rem 8rem;
+}
+
+.project-image.right img{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project Display Description */
+.project-description-container{
+  flex: 1;
+  margin: auto;
+  z-index: 1;
+}
+
+.project-description-container.left{
+  order: 1;
+}
+
+.project-description{
+  background: $accent-colour2;
+  padding: 3rem 4rem;
+}
+
+.project-description.right{
+  margin-left: -4rem;
+}
+
+.project-description.left{
+  margin-right: -4rem;
+}
+
+/* Project Display Text */
+.project-description h3{
+  color: $background-colour;
+  margin-top: 0;
+  margin-bottom: -0.8rem;
+  font-size: 1.5rem;
+}
+
+.project-description p{
+  color: $background-colour;
+}
+
+
+/* MEDIA QUERIES */
+/* Screen size below 480px */
+@media screen and (max-width:30rem){
+  .main-header{
+    padding: 8rem 0 0 9%;
+    margin-bottom: -1.5rem;
+  }
+
+  .main-header h1{
+    font-size: 2rem;
+  }
+
+  .main-header h2{
+    font-size: 1rem;
+    margin-top: -5.5rem;
+    width: 90%;
+  }
+
+  .main-header h3{
+    font-size: 0.8rem;
+    margin-top: 3.5rem;
+    width: 90%;
+  }
+
+  .project-display{
+    flex-direction: column; 
+    margin-bottom: 2rem; 
+  }
+
+  .project-image {
+    margin-right: 10%;
+    padding: 2rem 1.5rem;
+  }
+
+  .project-description-container{
+    margin: 0 0 0 30%;
+  }
+
+  .project-description{
+    padding: 1.5rem 2rem;
+  }
+
+  .project-description h3{
+    font-size: 1rem;
+  }
+
+  .project-description a{
+    font-size: 0.6rem;
+  }
+
+  .project-image.right{
+    order: 1;
+    padding: 2rem 1.5rem;
+  }
+
+  .project-description-container.left{
+    order: 2;
+  }
+
+  .project-description.right{
+    margin-top: -2rem;
+    margin-left: 0;
+  }
+
+  .project-description.left{
+    margin-top: -2rem;
+    margin-right: 0;
+  }
+
+  .main-nav{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .side-nav{
+    display: none;
+  }
+
+  .anchor{
+    padding-top: 0;
+    margin-top: 4rem;
+  }
+}
+
+/* Screen size of 480px - 768px */
+@media screen and (min-width:30rem) and (max-width: 48rem){
+  .main-header{
+    padding: 9rem 0 0 9%;
+    margin-bottom: -1rem;
+  }
+
+  .main-header h1{
+    font-size: 2.8rem;
+  }
+
+  .main-header h2{
+    font-size: 1.25rem;
+    margin-top: -7.5rem;
+    width: 90%;
+  }
+
+  .main-header h3{
+    font-size: 1rem;
+    margin-top: 5rem;
+    width: 90%;
+  }
+
+  .project-display{
+    flex-direction: column; 
+    margin-bottom: 4rem; 
+  }
+
+  .project-image {
+    margin-right: 10%;
+    padding: 2rem 4rem 3rem;
+  }
+
+  .project-description-container{
+    margin: 0 0 0 30%;
+  }
+
+  .project-description{
+    padding: 2rem 3rem;
+  }
+
+  .project-description h3{
+    font-size: 1.2rem;
+  }
+
+  .project-description a{
+    font-size: 0.8rem;
+  }
+
+  .project-image.right{
+    order: 1;
+    padding: 2rem 4rem 3rem;
+  }
+
+  .project-description-container.left{
+    order: 2;
+  }
+
+  .project-description.right{
+    margin-top: -3rem;
+    margin-left: 0;
+  }
+
+  .project-description.left{
+    margin-top: -3rem;
+    margin-right: 0;
+  }
+
+  .main-nav{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .side-nav{
+    display: none;
+  }
+
+  .anchor{
+    padding-top: 0;
+    margin-top: 4rem;
+  }
+}
+
+/* Screen size of 768px - 960px */
+@media screen and (min-width: 48rem) and (max-width: 60rem){
+  .main-header{
+    padding: 4rem 9% 0;
+  }
+
+  .main-header h1{
+    font-size: 2.8rem;
+  }
+
+  .main-header h2{
+    font-size: 1.25rem;
+    margin-top: -7.5rem;
+  }
+
+  .main-header h3{
+    font-size: 1rem;
+    margin-top: 5rem;
+    width: 80%;
+  }
+
+  .project-description h3{
+    font-size: 1.2rem;
+  }
+
+  .side-nav ul{
+    margin-top: -0.5rem;
+  }
+
+  .side-nav li{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .anchor{
+    padding-top: 0;
+    margin-top: 4rem;
+  }
+}
+  
+  
