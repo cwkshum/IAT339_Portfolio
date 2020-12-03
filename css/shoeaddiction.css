@@ -15,14 +15,14 @@
 
 /* MEDIA QUERIES */
 
-/* Screen size of 480px - 800px */
+/* Screen size of 768px - 800px */
 @media screen and (min-width: 30rem) and (max-width: 48rem){
 	.sub-header h1{
 		font-size: 1.8rem;
 	}
 }
 
-/* Screen size of 800px - 1280*/
+/* Screen size of 768px - 1280px */
 @media screen and (min-width: 48rem) and (max-width: 80rem){
 	.sub-header h1{
 		font-size: 2.4rem;

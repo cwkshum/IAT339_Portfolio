@@ -1,3 +1,4 @@
+/* Container Styling */
 .container.center-align{
 	align-items: center;
 }
@@ -36,6 +37,7 @@
 	width: 100%;
 }
 
+/* Project Description Styling */
 .project-description{
 	display: flex;
 	flex-direction: row;
@@ -53,6 +55,7 @@
 	border-left: 1px solid #DDC7C4;
 }
 
+/* Heading Underline Styling */
 hr{
   margin-top: -0.5rem;
   margin-right: 70%;
@@ -60,6 +63,7 @@ hr{
   border: 1px solid #C09992;
 }
 
+/* Divider Styling */
 .divider{
   margin-top: -0.5rem;
   margin: 4rem 25% 0;
@@ -80,7 +84,6 @@ hr{
 	padding-right: 0;
 }
 
-/* Image Styling */
 .image-container.right{
 	flex: 1;
 	margin-top: 1.5rem;
@@ -91,6 +94,7 @@ hr{
 	padding-right: 8%;
 }
 
+/* Container For Next Project Button */
 .project-navigation{
 	margin: 5rem 9.5% 6rem;
 	text-align: right;
@@ -99,7 +103,6 @@ hr{
 /* MEDIA QUERIES */
 /* Screen size below 320px */
 @media screen and (max-width:30rem){
-
 	.container {
 		flex-direction: column;
 	}
@@ -147,9 +150,8 @@ hr{
 	}
 }
 
-/* Screen size of 480px - 800px */
+/* Screen size of 480px - 768px */
 @media screen and (min-width: 30rem) and (max-width: 48rem){
-	
 	.container {
 		flex-direction: column;
 	}
@@ -200,9 +202,8 @@ hr{
 	}
 }
 
-
+/* Screen size of 768px - 1280px */
 @media screen and (min-width: 48rem) and (max-width: 80rem){
-
 	.container{
 		flex-direction: column;
 	}

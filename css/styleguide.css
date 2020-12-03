@@ -116,7 +116,7 @@ code{
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
-
+/* Project Image Styling */
 .project-image{
   flex: 2;
   background: #f2edec;
@@ -162,6 +162,7 @@ code{
   margin-right: -4rem;
 }
 
+/* Project Description Text */
 .project-description h3{
   color: #ffffff;
   margin-top: 0;
@@ -483,6 +484,7 @@ code{
 	}
 }
 
+/* Screen size greater than 768px*/
 @media (min-width: 48rem) {
   	.main-nav{
   		padding: 3.5rem 0rem;

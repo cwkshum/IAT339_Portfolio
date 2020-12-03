@@ -13,6 +13,12 @@
   flex-wrap: nowrap;
 }
 
+/* Header Text Container */
+.header-content{
+  flex: 3;
+}
+
+/* Header Text Styling */
 .main-header h1{
   font-size: 4rem;
   color: #C09992;
@@ -33,12 +39,7 @@
   margin-left: 0.3rem;
 }
 
-/* Header Text */
-.header-content{
-  flex: 3;
-}
-
-/* Header Links */
+/* Header Links Container */
 .side-nav{
   flex: 1;
 }
@@ -74,6 +75,7 @@
   margin: 4rem 10%;
 }
 
+/* For Page anchoring */
 .anchor{
   padding-top: 8rem;
   margin-top: -8rem;
@@ -143,6 +145,7 @@ hr{
   margin-right: -4rem;
 }
 
+/* Project Display Text */
 .project-description h3{
   color: #ffffff;
   margin-top: 0;
@@ -158,7 +161,6 @@ hr{
 /* MEDIA QUERIES */
 /* Screen size below 480px */
 @media screen and (max-width:30rem){
-
   .main-header{
     padding: 8rem 0 0 9%;
     margin-bottom: -1.5rem;
@@ -240,7 +242,7 @@ hr{
   }
 }
 
-/* Screen size of 480px - 800px */
+/* Screen size of 480px - 768px */
 @media screen and (min-width:30rem) and (max-width: 48rem){
   .main-header{
     padding: 9rem 0 0 9%;
@@ -323,9 +325,8 @@ hr{
   }
 }
 
-/* Screen size of 786px - 960px */
+/* Screen size of 768px - 960px */
 @media screen and (min-width: 48rem) and (max-width: 60rem){
-
   .main-header{
     padding: 4rem 9% 0;
   }

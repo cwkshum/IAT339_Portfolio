@@ -24,9 +24,9 @@ h2, h3, h4{
 }
 
 a{
+	color: #8C7977;
 	text-decoration: none;
 	transition: color 0.5s;
-	color: #8C7977;
 }
 
 a:hover, a:focus{
@@ -63,7 +63,7 @@ header h2{
 	padding: 9rem 10% 5rem;
 }
 
-/* Navigation Styling https://codepen.io/mutedblues/pen/MmPNPG */
+/* Navigation Styling */
 .main-nav {
 	background-color: #fff;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
@@ -320,6 +320,7 @@ footer{
 	padding: 1rem 10% 1rem 9%;
 }
 
+/* Footer Copyright Styling */
 .footer-copyright{
 	flex: 1;
 	order: 1;
@@ -329,6 +330,7 @@ footer{
 	color: #DCC8C3;
 }
 
+/* Footer Links */
 .footer-links{
 	flex: 2;
 	order: 2;
@@ -345,7 +347,6 @@ footer{
 
 /* Screen size below 480px */
 @media screen and (max-width:30rem){
-
 	body {
 		font-size: 0.75rem;
 	}
@@ -393,7 +394,6 @@ footer{
 
 /* Screen size of 480px - 768px */
 @media screen and (min-width:30rem) and (max-width:48rem){
-
 	footer{
 		flex-direction: column;
 		text-align: center;
@@ -436,7 +436,6 @@ footer{
 /* For Responsive Navigation */
 /* Screen size greater than 768px */
 @media (min-width: 48rem) {
-  
 	.nav-logo img{
 		max-width: 45%;
 		margin-top: -0.3rem;

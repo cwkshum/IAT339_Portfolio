@@ -1,14 +1,15 @@
+/* Header Styling */
 .sub-header{
 	background: #f2edec;
 }
 
+/* Page Content Container Styling */
 .container{
 	flex-direction: column;
-	/*padding: 1rem 1rem;*/
 	margin-bottom: 2rem;
 }
 
-
+/* Heading Underline Styling */
 hr{
 	margin-top: -0.5rem;
 	margin-right: 70%;

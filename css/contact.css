@@ -24,6 +24,7 @@
 	margin-bottom: 3rem;
 }
 
+/* Form Heading */
 .form-container h2{
 	margin-left: 0.8rem;
 	margin-top: -0.5rem;
@@ -36,6 +37,7 @@
 	padding-bottom: 1.2rem;
 }
 
+/* First and Last Name Input Container */
 .form-section.name{
 	padding-top: 2rem;
 	margin-bottom: -3rem;
@@ -45,6 +47,7 @@
 	display: inline-block;
 }
 
+/* Email and Message Input Container */
 .form-section.block{
 	padding-top: 3rem;
 	margin-bottom: -1.5rem;
@@ -62,7 +65,6 @@
 /* MEDIA QUERIES */
 /*  Screen size below 480px*/
 @media screen and (max-width:30rem){
-
 	.container {
 		flex-direction: column;
 		padding: 7rem 0 4rem;
@@ -105,7 +107,7 @@
 	}
 }
 
-/* Screen size of 480px -  896px */
+/* Screen size of 480px - 720px */
 @media screen and (min-width: 30rem) and (max-width: 45rem){
 
 	.container{
@@ -150,7 +152,7 @@
 	}
 }
 
-/* Screen size of 896px -  1184px */
+/* Screen size of 720px - 1184px */
 @media screen and (min-width: 45rem) and (max-width: 74rem){
 
 	.container{
@@ -191,8 +193,8 @@
 	}
 }
 
+/* Screen size of 1184px - 1360px */
 @media screen and (min-width: 74rem) and (max-width: 85rem){
-
 	.form-section.name{
 		margin-right: 13%;
 		width: 40%;
